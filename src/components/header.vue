@@ -1,81 +1,71 @@
 <template>
-  <div>
-    <div class="header">
-      <h2>Freelance_HUB</h2>
-      <search-input/>
-      <my-button
-          class="sign"
-          @click="showSign"
-      >Sign in
-      </my-button>
-      <transition name="slide-fade">
-      <sign v-model:show="signVisible"/>
-      </transition>
+  <div class="header">
+    <div id="logoSquare">
+      <div id="square1"/>
+      <div id="square2"/>
+      <div id="square3"/>
+      <div id="square4"/>
     </div>
-    <div class="menu">
-      <header-menu/>
+    <div id="logo">
+      <img src="../../public/pic/sourcestore.svg"/>
     </div>
+    <headerMenu/>
   </div>
 </template>
 
 <script>
-import searchInput from "@/components/UI/searchInput";
-import headerMenu from "@/components/headerMenu";
-import myButton from "@/components/UI/button"
-import sign from "@/components/sign";
+import headerMenu from "@/components/UI/headerMenu";
 
 export default {
   name: "myHeader",
 
   components: {
-    searchInput,
-    headerMenu,
-    myButton,
-    sign,
-  },
-  data() {
-    return {
-      signVisible: false
-    }
-  },
-  methods: {
-    showSign() {
-      this.signVisible = true;
-    },
+    headerMenu
   }
 }
+
 
 </script>
 
 <style scoped>
 .header {
-  display: flex;
-  min-height: 90px;
+  position: fixed;
+  box-sizing: border-box;
+  height: 72px;
+  width: 1216px;
+  top: 0;
+  border-bottom: 1px solid #E0E7EE;
+  background-color: #F9FBFF;
+
 }
 
-.sign {
-  text-align: center;
-  position: absolute;
-  right: 20px;
+#logoSquare {
+  display: grid;
+  grid-template-rows: 12px 12px;
+  grid-template-columns: 12px 12px;
+  padding-top: 24px;
+  float: left;
 }
 
-h2 {
-  padding: 20px;
+#square1 {
+  background: #11518F;
 }
 
-
-.slide-fade-enter-active {
-  transition: all .3s ease-out;
+#square2 {
+  background: #104080;
 }
 
-.slide-fade-leave-active {
-  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+#square3 {
+  background: #185A97;
 }
 
-.slide-fade-enter-from,
-.slide-fade-leave-to {
-  transform: translateX(20px);
-  opacity: 0;
+#square4 {
+  background: #11316A;
 }
 
+#logo {
+  float: left;
+  padding-top: 32px;
+  margin-left: 9px;
+}
 </style>

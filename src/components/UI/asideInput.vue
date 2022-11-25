@@ -1,0 +1,37 @@
+<template>
+  <div>
+    <input type="text" placeholder="">
+    <svg id="svg" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 1L5 5L9 1" stroke="#B9BCC1" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "asideInput"
+}
+</script>
+
+<style scoped>
+input {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 12px;
+  width: 384px;
+  height: 56px;
+  border: 1px solid #E0E7EE;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+#svg {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  left: 350px;
+  bottom: 30px;
+}
+</style>
