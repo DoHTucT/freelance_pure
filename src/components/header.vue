@@ -1,15 +1,17 @@
 <template>
   <div class="header">
-    <div id="logoSquare">
-      <div id="square1"/>
-      <div id="square2"/>
-      <div id="square3"/>
-      <div id="square4"/>
+    <div class="container">
+      <div id="logoSquare">
+        <div id="square1"/>
+        <div id="square2"/>
+        <div id="square3"/>
+        <div id="square4"/>
+      </div>
+      <div id="logo">
+        <img src="../../public/pic/sourcestore.svg"/>
+      </div>
+      <headerMenu/>
     </div>
-    <div id="logo">
-      <img src="../../public/pic/sourcestore.svg"/>
-    </div>
-    <headerMenu/>
   </div>
 </template>
 
@@ -32,11 +34,16 @@ export default {
   position: fixed;
   box-sizing: border-box;
   height: 72px;
-  width: 1216px;
+  width: 100%;
   top: 0;
   border-bottom: 1px solid #E0E7EE;
   background-color: #F9FBFF;
+}
 
+.container {
+  width: 1216px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #logoSquare {

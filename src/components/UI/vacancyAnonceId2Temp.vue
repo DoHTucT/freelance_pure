@@ -120,10 +120,6 @@ img {
   color: #7A7D83;
 }
 
-.date, .views{
-  align-items: center;
-}
-
 .vacancy-name {
   height: 36px;
   margin-bottom: 13px;

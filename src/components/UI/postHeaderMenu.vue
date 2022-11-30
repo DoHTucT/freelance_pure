@@ -1,6 +1,6 @@
 <template>
   <div class="menu">
-    <postHeaderButton class="button">Все</postHeaderButton>
+    <postHeaderButton class="button-active">Все</postHeaderButton>
     <postHeaderButton class="button">Frontend</postHeaderButton>
     <postHeaderButton class="button">Дизайн</postHeaderButton>
     <postHeaderButton class="button">Backend</postHeaderButton>
@@ -38,6 +38,12 @@ export default {
 }
 .button{
   margin-top: 32px;
+}
+.button-active{
+  margin-top: 32px;
+  background: #11316A;
+  box-shadow: 0px 4px 6px rgba(17, 49, 106, 0.15), 0px 8px 20px rgba(17, 49, 106, 0.07);
+  color: #FFFFFF;
 }
 
 </style>

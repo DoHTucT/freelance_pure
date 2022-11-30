@@ -1,10 +1,10 @@
 <template>
   <div class="menu">
-    <asideInput class="input" placeholder="Город"/>
-    <asideInput class="input" placeholder="Вознаграждение"/>
-    <asideInput class="input" placeholder="Тип работы"/>
-    <asideInput class="input" placeholder="Занятость"/>
-    <asideInput class="input" placeholder="Опыт работы"/>
+    <asideInput class="input" placeholderValue="Город"/>
+    <asideInput class="input" placeholderValue="Вознаграждение"/>
+    <asideInput class="input" placeholderValue="Тип работы"/>
+    <asideInput class="input" placeholderValue="Занятость"/>
+    <asideInput class="input" placeholderValue="Опыт работы"/>
   </div>
 </template>
 
@@ -13,7 +13,7 @@ import asideInput from "@/components/UI/asideInput";
 
 export default {
   name: "asideMenu",
-
+  props: ['placeholderValue'],
   components: {
     asideInput
   }
@@ -22,21 +22,21 @@ export default {
 
 <style scoped>
 .menu {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
+  float: left;
   width: 384px;
   height: 408px;
   margin-top: 40px;
 }
 
 .input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 30px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   color: #7A7D83;
-  background-color: transparent;
 }
 </style>
