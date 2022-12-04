@@ -1,78 +1,39 @@
 <template>
-  <div class="header">
-    <div class="container">
-      <div id="logoSquare">
-        <div id="square1"/>
-        <div id="square2"/>
-        <div id="square3"/>
-        <div id="square4"/>
-      </div>
-      <div id="logo">
-        <img src="../../public/pic/sourcestore.svg"/>
-      </div>
-      <headerMenu/>
-    </div>
+  <div class="post-header">
+    <div id="h1">Каталог вакансий</div>
+    <searchInput class="search"/>
+    <postHeaderMenu/>
   </div>
 </template>
 
 <script>
-import headerMenu from "@/components/UI/headerMenu";
+import searchInput from "@/components/UI/searchInput";
+import postHeaderMenu from "@/components/UI/headerMenu";
 
 export default {
-  name: "myHeader",
+  name: "postHeader",
 
   components: {
-    headerMenu
+    searchInput,
+    postHeaderMenu
   }
 }
-
-
 </script>
 
 <style scoped>
-.header {
-  position: fixed;
-  box-sizing: border-box;
-  height: 72px;
-  width: 100%;
-  top: 0;
-  border-bottom: 1px solid #E0E7EE;
-  background-color: #F9FBFF;
+.post-header{
+  margin-top: 72px;
 }
-
-.container {
-  width: 1216px;
-  margin-left: auto;
-  margin-right: auto;
+#h1 {
+  margin-top: 36px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+  color: #252931;
 }
-
-#logoSquare {
-  display: grid;
-  grid-template-rows: 12px 12px;
-  grid-template-columns: 12px 12px;
-  padding-top: 24px;
-  float: left;
-}
-
-#square1 {
-  background: #11518F;
-}
-
-#square2 {
-  background: #104080;
-}
-
-#square3 {
-  background: #185A97;
-}
-
-#square4 {
-  background: #11316A;
-}
-
-#logo {
-  float: left;
-  padding-top: 32px;
-  margin-left: 9px;
+.search{
+  margin-top: 28px;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <my-header/>
+  <myHeader/>
   <div class="container">
 
     <postHeader/>
@@ -9,9 +9,9 @@
 </template>
 
 <script>
-import myHeader from "@/components/header";
+import myHeader from "@/components/navBar";
 import myFooter from "@/components/footer";
-import postHeader from "@/components/postHeader";
+import postHeader from "@/components/header";
 import asideMenu from "@/components/asideMenu";
 import vacancyFrame from "@/components/vacancyFrame";
 

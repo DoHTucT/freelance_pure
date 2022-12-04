@@ -1,5 +1,7 @@
 <template>
-<button><slot/></button>
+  <button>
+    <slot/>
+  </button>
 </template>
 
 <script>
@@ -9,21 +11,20 @@ export default {
 </script>
 
 <style scoped>
-button{
-  display: ;
-  text-align: center;
-  margin-top: 15px;
-  height: 52px;
-  width: 150px;
-  border: 2px solid rebeccapurple;
-  border-radius: 5px;
-  background: none;
+button {
+  margin-top: 34px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #FFFFFF;
+  width: 176px;
+  height: 56px;
+  background: #11316A;
+  border-radius: 8px;
+  border: none;
 }
 
-button:active{
-  background-color: gray;
-}
-slot{
+slot {
   text-align: center;
 }
 </style>

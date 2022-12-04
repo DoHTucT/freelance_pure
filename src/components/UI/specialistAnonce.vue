@@ -14,7 +14,7 @@
       </defs>
     </svg>
     <div class="content">
-      <div class="place">
+      <div class="card-header">
         <div class="specialization">Дизайн и проектирование</div>
         <div class="city">Москва</div>
           <div class="date">
@@ -83,10 +83,10 @@ export default {
   margin-left: 24px;
 }
 
-.place {
+.card-header {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  /*align-items: flex-start;*/
   padding: 0px;
   width: 664px;
   gap: 16px;
@@ -97,18 +97,25 @@ export default {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #7A7D83;
-  border: solid black 1px;
+}
+
+.specialization{
+  justify-content: flex-start;
+}
+
+.city{
+  justify-content: flex-start;
 }
 
 .date {
+  position: relative;
+  left: 362px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   align-items: center;
   padding: 0px;
-  /*margin-left: 200px;*/
   height: 16px;
-  width: 150px;
+  width: 70px;
   font-weight: 600;
   font-size: 12px;
   line-height: 150%;

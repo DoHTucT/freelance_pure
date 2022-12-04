@@ -1,72 +1,49 @@
 <template>
-  <div class="headerMenu">
-    <div class="line"/>
-
-    <headerMenuButton
-        v-for="tab in tabs"
-        :key="tab"
-        :class="['tab-button', { active: currentTab === tab }]"
-        @click="currentTab = tab"
-    >
-      {{ tab }}
-    </headerMenuButton>
-
-    <!--    <header-menu-button class="active">Вакансии</header-menu-button>-->
-    <!--    <header-menu-button>Специалисты</header-menu-button>-->
-    <!--    <header-menu-button>Компании</header-menu-button>-->
-    <userSign class="sign"/>
+  <div class="menu">
+    <postHeaderButton class="button-active">Все</postHeaderButton>
+    <postHeaderButton class="button">Frontend</postHeaderButton>
+    <postHeaderButton class="button">Дизайн</postHeaderButton>
+    <postHeaderButton class="button">Backend</postHeaderButton>
+    <postHeaderButton class="button">Маркетинг</postHeaderButton>
+    <postHeaderButton class="button">SEO</postHeaderButton>
+    <postHeaderButton class="button">SMM</postHeaderButton>
+    <postHeaderButton class="button">Брендинг</postHeaderButton>
+    <postHeaderButton class="button">Тестирование</postHeaderButton>
+    <postHeaderButton class="button">Видео</postHeaderButton>
+    <postHeaderButton class="button">Таргетинг</postHeaderButton>
+    <postHeaderButton class="button">Другое</postHeaderButton>
   </div>
 </template>
 
 <script>
-import headerMenuButton from "@/components/UI/headerMenuButton";
-import userSign from "@/components/UI/userSign";
-import vacancyAnonce from "@/components/UI/vacancyAnonce";
-import specialistAnonce from "@/components/UI/specialistAnonce";
+import postHeaderButton from "@/components/UI/headerButton";
 
 export default {
-  name: "headerMenu",
+  name: "postHeaderMenu",
 
   components: {
-    headerMenuButton,
-    userSign,
-    vacancyAnonce,
-    specialistAnonce
-  },
-
-  data() {
-    return {
-      currentTab: 'vacancyAnonce',
-      tabs: ['vacancyAnonce', 'specialistAnonce', 'Компании']
-    }
+    postHeaderButton
   }
 }
 </script>
 
 <style scoped>
-.headerMenu {
-  margin-top: 30px;
-  float: right;
+.menu {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  justify-content: space-between;
   padding: 0;
-  gap: 35px;
-  height: 24px;
+  height: 96px;
+  border-bottom: 1px solid #E0E7EE;
 }
-
-.tab-button.active {
-  color: #11316A;
-  opacity: 1;
+.button{
+  margin-top: 32px;
 }
-
-.line {
-  position: relative;
-  width: 76px;
-  height: 2px;
-  top: 40px;
-  left: 106px;
+.button-active{
+  margin-top: 32px;
   background: #11316A;
-  border-radius: 1px;
+  box-shadow: 0px 4px 6px rgba(17, 49, 106, 0.15), 0px 8px 20px rgba(17, 49, 106, 0.07);
+  color: #FFFFFF;
 }
+
 </style>

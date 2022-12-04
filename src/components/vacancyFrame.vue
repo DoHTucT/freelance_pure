@@ -1,8 +1,6 @@
 <template>
   <div class="frame">
     <component :is="currentTab"></component>
-<!--    <vacancyAnonce/>-->
-<!--    <specialistAnonce/>-->
 
   </div>
 </template>
@@ -36,6 +34,11 @@ export default {
       specialists: [
         {id: 1}, {id: 2}, {id: 3}
       ]
+    }
+  },
+  computed: {
+    currentTab: function () {
+      return this.$store.state.currentTab
     }
   }
 }

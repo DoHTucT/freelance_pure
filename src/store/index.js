@@ -1,14 +1,21 @@
-import { createStore } from 'vuex'
+import {createStore} from 'vuex'
 
 export default createStore({
-  state: {
-  },
-  getters: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
+    state: {
+        currentTab: 'vacancyAnonce'
+    },
+    getters: {
+
+    },
+    mutations: {
+        setCurrentTab(state, value) {
+            state.currentTab = value;
+        }
+    },
+    actions: {
+        updateCurrentTab(context, value) {
+            context.commit('setCurrentTab', value);
+        }
+    },
+    modules: {}
 })

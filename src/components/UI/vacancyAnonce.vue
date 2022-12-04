@@ -1,8 +1,8 @@
 <template>
-  <div class="card">
+  <div class="card" @click="$router.push('/vacancycard')">
     <img src="../../../public/pic/ozon.png" height="48" width="48"/>
     <div class="content">
-      <div class="place">
+      <div class="card-header">
         <div class="firm">Ozon Информационные технологии</div>
         <div class="city">Москва</div>
         <div class="info">
@@ -87,7 +87,7 @@ img {
   margin-left: 24px;
 }
 
-.place {
+.card-header {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -103,12 +103,13 @@ img {
 }
 
 .info {
+  position: relative;
+  left: 225px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   padding: 0px;
-  margin-left: 200px;
   gap: 16px;
   height: 16px;
   width: 150px;
