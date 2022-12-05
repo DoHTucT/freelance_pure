@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card" @click="$router.push('/freelancerprofile')">
     <svg class="avatar" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <rect width="48" height="48" rx="24" fill="url(#pattern0)"/>
       <rect width="48" height="48" rx="24" fill="url(#pattern1)"/>
@@ -91,7 +91,7 @@ export default {
   width: 664px;
   gap: 16px;
   height: 15px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 10px;
   line-height: 150%;
   letter-spacing: 0.03em;
@@ -116,7 +116,7 @@ export default {
   padding: 0px;
   height: 16px;
   width: 70px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 12px;
   line-height: 150%;
   text-align: right;
@@ -128,7 +128,7 @@ export default {
   height: 36px;
   margin-bottom: 13px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 24px;
   line-height: 150%;
   color: #11316A;
@@ -163,7 +163,7 @@ export default {
 
 .option {
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 12px;
   line-height: 150%;
   letter-spacing: 0.01em;
@@ -172,7 +172,7 @@ export default {
 
 .value {
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 16px;
   line-height: 150%;
   color: #252931;

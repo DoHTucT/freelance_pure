@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import vacancy from "@/pages/vacancy";
 import vacancyAnonce from "@/components/UI/vacancyAnonce";
 import vacancyCard from "@/pages/vacancyCard";
+import companyProfile from "@/pages/companyProfile";
+import freelancerProfile from "@/pages/freelancerProfile";
 
 const routes = [
   {
@@ -11,8 +13,15 @@ const routes = [
   {
     path: '/vacancycard',
     component: vacancyCard
-  }
-
+  },
+  {
+    path: '/companyprofile',
+    component: companyProfile
+  },
+  {
+    path: '/freelancerprofile',
+    component: freelancerProfile
+  },
 
 ]
 

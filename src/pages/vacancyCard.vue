@@ -41,7 +41,9 @@
         </div>
         <div class="description">
           Ищем UI/UX веб-дизайнера, готового помочь с техническим дизайном проекта Workspace.ru.
-          Нужен ответственный продуктовый дизайнер, внимательный к мелочам. От специалиста потребуются хорошие знания Figma и, в меньшей степени, Sketch. Большим плюсом будет знание редактуры (например, по книгам Максима Ильяхова) — для изложения в макетах своих мыслей кратко, ясно и убедительно
+          Нужен ответственный продуктовый дизайнер, внимательный к мелочам. От специалиста потребуются хорошие знания
+          Figma и, в меньшей степени, Sketch. Большим плюсом будет знание редактуры (например, по книгам Максима
+          Ильяхова) — для изложения в макетах своих мыслей кратко, ясно и убедительно
         </div>
         <myButton>Откликнуться</myButton>
         <div class="line"/>
@@ -49,7 +51,7 @@
         <vacancyAnonce/>
       </div>
       <div class="company-info">
-<companyAnonce/>
+        <companyAnonce/>
       </div>
     </div>
   </div>
@@ -96,7 +98,7 @@ export default {
 
 .back-text {
   margin-left: 10px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 16px;
   line-height: 150%;
   color: #7A7D83;
@@ -104,7 +106,7 @@ export default {
 
 .vacancy-name {
   margin-bottom: 28px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 32px;
   line-height: 150%;
   color: #252931;
@@ -151,34 +153,34 @@ export default {
   border-left: solid 1px #E0E7EE;
 }
 
-.info-table-inner{
+.info-table-inner {
   margin-top: 29px;
   margin-left: 32px;
 }
 
-.option{
-  font-weight: 300;
+.option {
+  font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   color: #252931;
 }
 
-.value{
-  font-weight: 600;
+.value {
+  font-weight: 700;
   font-size: 24px;
   line-height: 150%;
   color: #11316A;
 }
 
-.description{
+.description {
   margin-top: 32px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   color: #252931;
 }
 
-.line{
+.line {
   border: 1px solid #E0E7EE;
   margin-top: 54px;
   margin-bottom: 44px;

@@ -94,7 +94,7 @@ img {
   padding: 0px;
   gap: 16px;
   height: 15px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 10px;
   line-height: 150%;
   letter-spacing: 0.03em;
@@ -113,7 +113,7 @@ img {
   gap: 16px;
   height: 16px;
   width: 150px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 12px;
   line-height: 150%;
   text-align: right;
@@ -129,7 +129,7 @@ img {
   height: 36px;
   margin-bottom: 13px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 24px;
   line-height: 150%;
   color: #11316A;
@@ -164,7 +164,7 @@ img {
 
 .option {
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 12px;
   line-height: 150%;
   letter-spacing: 0.01em;
@@ -173,7 +173,7 @@ img {
 
 .value {
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 16px;
   line-height: 150%;
   color: #252931;

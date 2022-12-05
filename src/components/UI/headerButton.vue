@@ -20,7 +20,7 @@ button {
   background-color: transparent;
   font-family: sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 12px;
   line-height: 150%;
   color: #7A7D83;
