@@ -1,6 +1,6 @@
 <template>
   <div class="headerMenu">
-    <div class="line"/>
+<!--    <div class="line"/>-->
 
     <headerMenuButton
         v-for="tab in tabs"
@@ -18,11 +18,11 @@
 <script>
 import headerMenuButton from "@/components/UI/navBarButton";
 import userSign from "@/components/UI/userSign";
-import vacancyAnonce from "@/components/UI/vacancyAnonce";
-import specialistAnonce from "@/components/UI/specialistAnonce";
+import vacancyAnonce from "@/components/vacancyAnonce";
+import specialistAnonce from "@/components/specialistAnonce";
 
 export default {
-  name: "headerMenu",
+  name: "navBarMenu",
 
   components: {
     headerMenuButton,
@@ -59,23 +59,15 @@ export default {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 0;
   gap: 35px;
-  height: 24px;
+  height: 25px;
 }
 
 .tab-button.active {
   color: #11316A;
   opacity: 1;
+  border-bottom: 2px solid #11316A;
+  padding-bottom: 19px;
 }
 
-.line {
-  position: relative;
-  width: 76px;
-  height: 2px;
-  top: 40px;
-  left: 106px;
-  background: #11316A;
-  border-radius: 1px;
-}
 </style>

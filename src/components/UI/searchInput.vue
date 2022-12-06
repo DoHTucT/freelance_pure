@@ -1,5 +1,8 @@
 <template>
-<input class="input" type="text" placeholder="Вы ищите...">
+  <div class="">
+  <input class="input" type="text" placeholder="Вы ищите...">
+  <img src="../../../public/pic/Serch.svg" alt="">
+  </div>
 </template>
 
 <script>
@@ -20,9 +23,10 @@ export default {
   background: #FFFFFF;
   border: 1px solid #E0E7EE;
   border-radius: 8px;
+  z-index: 1;
 }
 
-input::-webkit-input-placeholder{
+input::-webkit-input-placeholder {
   width: 84px;
   height: 24px;
   font-family: sans-serif;
@@ -31,4 +35,13 @@ input::-webkit-input-placeholder{
   font-size: 14px;
   line-height: 150%;
 }
+
+img{
+  position: relative;
+  float: right;
+  bottom: 35px;
+  right: 21px;
+  z-index: 2;
+}
+
 </style>

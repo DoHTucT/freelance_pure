@@ -19,7 +19,7 @@
 import postHeaderButton from "@/components/UI/headerButton";
 
 export default {
-  name: "postHeaderMenu",
+  name: "headerMenu",
 
   components: {
     postHeaderButton

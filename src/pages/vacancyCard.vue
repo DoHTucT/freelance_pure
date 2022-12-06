@@ -60,7 +60,7 @@
 <script>
 import myHeader from "@/components/navBar";
 import myButton from "@/components/UI/button";
-import vacancyAnonce from "@/components/UI/vacancyAnonce";
+import vacancyAnonce from "@/components/vacancyAnonce";
 import companyAnonce from "@/components/UI/companyAnonce";
 
 export default {

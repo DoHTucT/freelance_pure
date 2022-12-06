@@ -29,6 +29,16 @@ input {
   background-color: transparent;
 }
 
+input:focus {
+  background: #FFFFFF;
+  border: 1px solid #E0E7EE;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #7A7D83;
+}
+
 #svg {
   display: flex;
   position: relative;

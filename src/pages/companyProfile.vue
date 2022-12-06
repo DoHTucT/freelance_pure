@@ -24,8 +24,7 @@
           <vacancyAnonce/>
         </div>
         <div class="company-info">
-          <companyAnonceHeader/>
-          <button class="i-wont-work">Хочу здесь работать</button>
+          <companyAnonceSmall/>
         </div>
       </div>
     </div>
@@ -35,14 +34,14 @@
 
 <script>
 import navBar from "@/components/navBar";
-import companyAnonceHeader from "@/components/UI/companyAnonceHeader";
-import vacancyAnonce from "@/components/UI/vacancyAnonce";
+import companyAnonceSmall from "@/components/UI/companyAnonceSmall";
+import vacancyAnonce from "@/components/vacancyAnonce";
 
 export default {
   name: "companyProfile",
   components: {
     navBar,
-    companyAnonceHeader,
+    companyAnonceSmall,
     vacancyAnonce,
   }
 }
@@ -92,18 +91,6 @@ export default {
   border-top: 1px solid #E0E7EE;
 }
 
-.company-info {
-  float: left;
-  box-sizing: border-box;
-  width: 384px;
-  height: 329px;
-  margin-left: 32px;
-  background: #FCFDFF;
-  border: 1px solid #E0E7EE;
-  border-radius: 12px;
-  box-shadow: 0px 17px 46px rgba(17, 49, 106, 0.1), 0px 7px 14px rgba(17, 49, 106, 0.06), 0px 2px 4px rgba(17, 49, 106, 0.04);
-}
-
 .about{
   margin-top: 29px;
   font-weight: 700;
@@ -124,20 +111,5 @@ export default {
   border: 1px solid #E0E7EE;
   margin-top: 42px;
   margin-bottom: 28px;
-}
-
-.i-wont-work{
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 36px;
-  gap: 8px;
-  width: 384px;
-  height: 56px;
-  background: rgba(17, 49, 106, 0.1);
-  border: 1px solid #E0E7EE;
-  border-radius: 0px 0px 12px 12px;
 }
 </style>

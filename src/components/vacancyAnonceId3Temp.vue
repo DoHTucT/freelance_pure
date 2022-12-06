@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <img src="../../../public/pic/ozon.png" height="48" width="48"/>
+    <img src="../../public/pic/ozon.png" height="48" width="48"/>
     <div class="content">
       <div class="place">
         <div class="firm">Ozon Информационные технологии</div>

@@ -1,17 +1,16 @@
 <template>
-  <myHeader/>
+  <navBar/>
   <div class="container">
 
-    <postHeader/>
+    <myHeader/>
     <asideMenu/>
     <vacancyFrame/>
   </div>
 </template>
 
 <script>
-import myHeader from "@/components/navBar";
-import myFooter from "@/components/footer";
-import postHeader from "@/components/header";
+import navBar from "@/components/navBar";
+import myHeader from "@/components/header";
 import asideMenu from "@/components/asideMenu";
 import vacancyFrame from "@/components/vacancyFrame";
 
@@ -19,9 +18,8 @@ export default {
   name: "vacancy",
 
   components: {
+    navBar,
     myHeader,
-    myFooter,
-    postHeader,
     asideMenu,
     vacancyFrame,
   }

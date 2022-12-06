@@ -7,22 +7,22 @@
         <div id="square3"/>
         <div id="square4"/>
       </div>
-      <div id="logo">
+      <div id="logo" @click="$router.push('/')">
         <img src="../../public/pic/sourcestore.svg"/>
       </div>
-      <headerMenu/>
+      <navBarMenu/>
     </div>
   </div>
 </template>
 
 <script>
-import headerMenu from "@/components/UI/navBarMenu";
+import navBarMenu from "@/components/UI/navBarMenu";
 
 export default {
-  name: "myHeader",
+  name: "navBar",
 
   components: {
-    headerMenu
+    navBarMenu
   }
 }
 
@@ -72,7 +72,7 @@ export default {
 
 #logo {
   float: left;
-  padding-top: 32px;
+  padding-top: 31px;
   margin-left: 9px;
 }
 </style>

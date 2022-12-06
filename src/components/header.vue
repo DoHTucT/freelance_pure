@@ -2,20 +2,20 @@
   <div class="post-header">
     <div id="h1">Каталог вакансий</div>
     <searchInput class="search"/>
-    <postHeaderMenu/>
+    <headerMenu/>
   </div>
 </template>
 
 <script>
 import searchInput from "@/components/UI/searchInput";
-import postHeaderMenu from "@/components/UI/headerMenu";
+import headerMenu from "@/components/UI/headerMenu";
 
 export default {
-  name: "postHeader",
+  name: "myHeader",
 
   components: {
     searchInput,
-    postHeaderMenu
+    headerMenu
   }
 }
 </script>

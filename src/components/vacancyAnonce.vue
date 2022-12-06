@@ -1,33 +1,18 @@
 <template>
   <div class="card" @click="$router.push('/vacancycard')">
-    <img src="../../../public/pic/ozon.png" height="48" width="48"/>
+    <img class="logo" src="../../public/pic/ozon.png" height="48" width="48"/>
     <div class="content">
       <div class="card-header">
         <div class="firm">Ozon Информационные технологии</div>
         <div class="city">Москва</div>
         <div class="info">
           <div class="views">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                  d="M1.55888 6.2335C1.48037 6.088 1.48037 5.9115 1.55888 5.766C2.50487 4.0165 4.25238 2.5 5.99988 2.5C7.74738 2.5 9.49488 4.0165 10.4409 5.7665C10.5194 5.912 10.5194 6.0885 10.4409 6.234C9.49488 7.9835 7.74738 9.5 5.99988 9.5C4.25238 9.5 2.50487 7.9835 1.55888 6.2335V6.2335Z"
-                  stroke="#B9BCC1" stroke-linecap="round" stroke-linejoin="round"/>
-              <path
-                  d="M7.06066 4.93934C7.64644 5.52512 7.64644 6.47487 7.06066 7.06066C6.47487 7.64644 5.52512 7.64644 4.93934 7.06066C4.35355 6.47487 4.35355 5.52512 4.93934 4.93934C5.52512 4.35355 6.47487 4.35355 7.06066 4.93934Z"
-                  stroke="#B9BCC1" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+            <img src="../../public/pic/Eye.svg" alt="" style="margin-right: 4px">
             250
           </div>
           <div class="date">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8 1V3" stroke="#B9BCC1" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M4 1V3" stroke="#B9BCC1" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M1.5 4.5H10.5" stroke="#B9BCC1" stroke-linecap="round" stroke-linejoin="round"/>
-              <path
-                  d="M9.5 2H2.5C1.9475 2 1.5 2.4475 1.5 3V9.5C1.5 10.0525 1.9475 10.5 2.5 10.5H9.5C10.0525 10.5 10.5 10.0525 10.5 9.5V3C10.5 2.4475 10.0525 2 9.5 2Z"
-                  stroke="#B9BCC1" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M3.5 6.5H8.5" stroke="#B9BCC1" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M3.5 8.5H8.5" stroke="#B9BCC1" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+            <img src="../../public/pic/Calendar.svg" alt="" style="margin-right: 4px">
+
             15.11.2022
           </div>
         </div>
@@ -74,7 +59,7 @@ export default {
   margin-bottom: 40px;
 }
 
-img {
+.logo {
   float: left;
   margin-left: 32px;
   margin-top: 32px;

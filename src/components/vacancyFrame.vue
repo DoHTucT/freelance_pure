@@ -6,11 +6,11 @@
 </template>
 
 <script>
-import vacancyAnonce from "@/components/UI/vacancyAnonce";
-import vacancyAnonceId2Temp from "@/components/UI/vacancyAnonceId2Temp";
-import vacancyAnonceId3Temp from "@/components/UI/vacancyAnonceId3Temp";
-import vacancyAnonceInactive from "@/components/UI/vacancyAnonceInactive";
-import specialistAnonce from "@/components/UI/specialistAnonce";
+import vacancyAnonce from "@/components/vacancyAnonce";
+import vacancyAnonceId2Temp from "@/components/vacancyAnonceId2Temp";
+import vacancyAnonceId3Temp from "@/components/vacancyAnonceId3Temp";
+import vacancyAnonceInactive from "@/components/vacancyAnonceInactive";
+import specialistAnonce from "@/components/specialistAnonce";
 
 export default {
   name: "vacancyFrame",
