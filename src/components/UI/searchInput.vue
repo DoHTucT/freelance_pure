@@ -24,6 +24,7 @@ export default {
   border: 1px solid #E0E7EE;
   border-radius: 8px;
   z-index: 1;
+  outline: none;
 }
 
 input::-webkit-input-placeholder {
