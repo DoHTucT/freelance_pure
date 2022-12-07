@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="input-container">
     <input type="text" :placeholder="placeholderValue">
     <svg id="svg" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M1 1L5 5L9 1" stroke="#B9BCC1" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -15,34 +15,61 @@ export default {
 </script>
 
 <style scoped>
-input {
+.input-container{
+
+}
+.placeholder-focus{
   box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  position: relative;
+  top: 56px;
   padding: 0 12px;
   width: 384px;
   height: 56px;
   border: 1px solid #E0E7EE;
   border-radius: 8px;
-  z-index: 1;
-  background-color: transparent;
+  z-index: -1;
+  background: #FFFFFF;
+
+}
+input {
+  box-sizing: border-box;
+  padding: 0 12px;
+  width: 384px;
+  height: 56px;
+  border: 1px solid #E0E7EE;
+  border-radius: 8px;
+  z-index: 2;
+  background-color: #F9FBFF;
 }
 
 input:focus {
   background: #FFFFFF;
-  border: 1px solid #E0E7EE;
+  border: none;
+}
+
+input:focus::-webkit-input-placeholder {
   font-weight: 600;
   font-size: 12px;
   line-height: 150%;
   letter-spacing: 0.01em;
   color: #7A7D83;
+  position: relative;
+  bottom: 15px;
+}
+input:focus:-moz-placeholder {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #7A7D83;
+  position: relative;
+  bottom: 15px;
 }
 
 #svg {
   display: flex;
   position: relative;
-  z-index: 2;
+  z-index: 3;
   left: 350px;
   bottom: 30px;
 }
