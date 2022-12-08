@@ -1,28 +1,28 @@
 <template>
   <div class="menu">
-    <postHeaderButton class="button-active">Все</postHeaderButton>
-    <postHeaderButton class="button">Frontend</postHeaderButton>
-    <postHeaderButton class="button">Дизайн</postHeaderButton>
-    <postHeaderButton class="button">Backend</postHeaderButton>
-    <postHeaderButton class="button">Маркетинг</postHeaderButton>
-    <postHeaderButton class="button">SEO</postHeaderButton>
-    <postHeaderButton class="button">SMM</postHeaderButton>
-    <postHeaderButton class="button">Брендинг</postHeaderButton>
-    <postHeaderButton class="button">Тестирование</postHeaderButton>
-    <postHeaderButton class="button">Видео</postHeaderButton>
-    <postHeaderButton class="button">Таргетинг</postHeaderButton>
-    <postHeaderButton class="button">Другое</postHeaderButton>
+    <headerButton class="button">Все</headerButton>
+    <headerButton class="button">Frontend</headerButton>
+    <headerButton class="button">Дизайн</headerButton>
+    <headerButton class="button">Backend</headerButton>
+    <headerButton class="button">Маркетинг</headerButton>
+    <headerButton class="button">SEO</headerButton>
+    <headerButton class="button">SMM</headerButton>
+    <headerButton class="button">Брендинг</headerButton>
+    <headerButton class="button">Тестирование</headerButton>
+    <headerButton class="button">Видео</headerButton>
+    <headerButton class="button">Таргетинг</headerButton>
+    <headerButton class="button">Другое</headerButton>
   </div>
 </template>
 
 <script>
-import postHeaderButton from "@/components/UI/headerButton";
+import headerButton from "@/components/UI/headerButton";
 
 export default {
   name: "headerMenu",
 
   components: {
-    postHeaderButton
+    headerButton
   }
 }
 </script>
@@ -36,10 +36,12 @@ export default {
   height: 96px;
   border-bottom: 1px solid #E0E7EE;
 }
-.button{
+
+.button {
   margin-top: 32px;
 }
-.button-active{
+
+.button:hover {
   margin-top: 32px;
   background: #11316A;
   box-shadow: 0px 4px 6px rgba(17, 49, 106, 0.15), 0px 8px 20px rgba(17, 49, 106, 0.07);

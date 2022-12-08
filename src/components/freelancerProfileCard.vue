@@ -257,5 +257,6 @@ a{
   line-height: 150%;
   color: #FFFFFF;
   border: none;
+  cursor: pointer;
 }
 </style>

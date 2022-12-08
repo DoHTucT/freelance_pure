@@ -94,6 +94,7 @@ export default {
 
 .detail {
   margin-top: 12px;
+  cursor: pointer;
 }
 
 .detail-text {

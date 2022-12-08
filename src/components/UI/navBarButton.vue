@@ -23,9 +23,7 @@ export default {
   color: #252931;
   opacity: 0.75;
   margin-right: 72px;
+  cursor: pointer;
 }
 
-.btn:active {
-  background-color: gray;
-}
 </style>

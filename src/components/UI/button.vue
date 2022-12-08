@@ -22,6 +22,7 @@ button {
   background: #11316A;
   border-radius: 8px;
   border: none;
+  cursor: pointer;
 }
 
 slot {

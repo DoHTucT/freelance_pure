@@ -38,6 +38,7 @@ export default {
   top: 0;
   border-bottom: 1px solid #E0E7EE;
   background-color: #F9FBFF;
+  z-index: 4;
 }
 
 .container {
@@ -74,5 +75,6 @@ export default {
   float: left;
   padding-top: 31px;
   margin-left: 9px;
+  cursor: pointer;
 }
 </style>

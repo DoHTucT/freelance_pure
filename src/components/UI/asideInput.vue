@@ -1,13 +1,12 @@
 <template>
-  <form action="">
-  <div class="row" id="row">
-    <label for="live">{{ placeholderValue }}</label>
+  <div class="row">
+
     <input type="text" id="live" required>
+    <label for="live">{{ placeholderValue }}</label>
     <svg id="svg" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M1 1L5 5L9 1" stroke="#B9BCC1" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
   </div>
-  </form>
 </template>
 
 <script>
@@ -41,11 +40,13 @@ export default {
   color: #7A7D83;
   z-index: 3;
   position: absolute;
-  margin: 16px;
-  /*transform: translateY(-1.5rem);*/
+  margin-left: 16px;
+  transform: translateY(15px);
+  pointer-events: none;
 }
 
-.row input:focus {
+.row input:focus,
+.row input:valid {
   font-weight: 400;
   line-height: 150%;
   letter-spacing: 0.01em;
@@ -57,7 +58,7 @@ export default {
 
 .row input:focus + label ,
 .row input:valid + label {
-  transform: translateY(-10px);
+  transform: translateY(3px);
   transition: 0.5s;
   font-weight: 600;
   font-size: 12px;

@@ -21,11 +21,12 @@ export default {
   height: 25px;
   align-items: center;
   margin-bottom: 16px;
+  cursor: pointer;
 }
 
 .user-pic {
   position: relative;
-  bottom: 4px;
+  bottom: 7px;
   display: flex;
   float: left;
   width: 24px;
@@ -45,6 +46,8 @@ export default {
   color: #7A7D83;
   background-color: transparent;
   border: none;
+  cursor: pointer;
+
 }
 img {
   display: flex;

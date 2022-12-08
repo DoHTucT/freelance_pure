@@ -74,6 +74,7 @@ freelancerProfileCard,
   gap: 4px;
   width: 250px;
   height: 24px;
+  cursor: pointer;
 }
 
 .back-text {

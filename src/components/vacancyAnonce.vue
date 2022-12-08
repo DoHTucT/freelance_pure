@@ -57,6 +57,7 @@ export default {
   box-shadow: 0px 40px 100px rgba(17, 49, 106, 0.07), 0px 15px 32px rgba(17, 49, 106, 0.05), 0px 3px 9px rgba(0, 0, 0, 0.03);
   border-radius: 12px;
   margin-bottom: 40px;
+  cursor: pointer;
 }
 
 .logo {
@@ -106,7 +107,7 @@ export default {
   color: #7A7D83;
 }
 
-.date, .views{
+.date, .views {
   align-items: center;
 }
 

@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "postHeaderButton"
+  name: "headerButton"
 }
 </script>
 
@@ -25,5 +25,6 @@ button {
   line-height: 150%;
   color: #7A7D83;
   border: none;
+  cursor: pointer;
 }
 </style>

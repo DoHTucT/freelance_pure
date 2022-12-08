@@ -5,10 +5,10 @@
       <div class="card-header">
         <div class="specialization">Дизайн и проектирование</div>
         <div class="city">Москва</div>
-          <div class="date">
-            <img src="../../public/pic/Calendar.svg" alt="" style="margin-right: 6px">
-            15.11.2022
-          </div>
+        <div class="date">
+          <img src="../../public/pic/Calendar.svg" alt="" style="margin-right: 6px">
+          15.11.2022
+        </div>
       </div>
       <div class="name">Ярославцев Иван</div>
       <div class="vacancy-type">
@@ -26,7 +26,9 @@
         </div>
       </div>
       <div class="description">
-        Добрый день! Ищу студию или компанию, которой я могу предложить свои навыки веб-дизайнера. Мое портфолио по ссылке. Также в данный момент продолжаю обучение по специальности «UX/UI Дизайн» в UPROCK.В формате удаленной работы более 6 лет.
+        Добрый день! Ищу студию или компанию, которой я могу предложить свои навыки веб-дизайнера. Мое портфолио
+        по ссылке. Также в данный момент продолжаю обучение по специальности «UX/UI Дизайн» в UPROCK.В формате удаленной
+        работы более 6 лет.
       </div>
     </div>
 
@@ -47,6 +49,7 @@ export default {
   box-shadow: 0px 40px 100px rgba(17, 49, 106, 0.07), 0px 15px 32px rgba(17, 49, 106, 0.05), 0px 3px 9px rgba(0, 0, 0, 0.03);
   border-radius: 12px;
   margin-bottom: 40px;
+  cursor: pointer;
 }
 
 .avatar {
@@ -80,11 +83,11 @@ export default {
   color: #7A7D83;
 }
 
-.specialization{
+.specialization {
   justify-content: flex-start;
 }
 
-.city{
+.city {
   justify-content: flex-start;
 }
 
