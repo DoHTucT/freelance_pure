@@ -141,6 +141,7 @@ export default {
   background: #11316A;
   box-shadow: 0px 4px 6px rgba(17, 49, 106, 0.15), 0px 8px 20px rgba(17, 49, 106, 0.07);
   color: #FFFFFF;
+  transition: 0.5s;
 }
 
 .h2 {

@@ -193,6 +193,7 @@ export default {
 
 .description {
   margin-top: 32px;
+  margin-bottom: 34px;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;

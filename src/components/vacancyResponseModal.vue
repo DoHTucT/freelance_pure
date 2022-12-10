@@ -228,8 +228,6 @@ export default {
 }
 
 .button{
-  position: relative;
-  bottom: 34px;
   display: flex;
   flex-direction: row;
   justify-content: center;

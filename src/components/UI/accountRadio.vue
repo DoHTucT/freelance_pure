@@ -79,7 +79,6 @@ form {
   position: relative;
   border-radius: 50%;
   border: 1px solid #E0E7EE;
-
 }
 
 .custom::before {

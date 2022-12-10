@@ -12,7 +12,6 @@ export default {
 
 <style scoped>
 button {
-  margin-top: 34px;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;

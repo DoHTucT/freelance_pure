@@ -171,5 +171,6 @@ a{
   background: rgba(17, 49, 106, 0.1);
   border: 1px solid #E0E7EE;
   border-radius: 0px 0px 12px 12px;
+  cursor: pointer;
 }
 </style>

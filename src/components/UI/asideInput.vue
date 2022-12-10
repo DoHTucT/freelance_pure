@@ -1,6 +1,5 @@
 <template>
   <div class="row">
-
     <input type="text" id="live" required>
     <label for="live">{{ placeholderValue }}</label>
     <svg id="svg" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -56,7 +55,7 @@ export default {
   padding-top: 25px;
 }
 
-.row input:focus + label ,
+.row input:focus + label,
 .row input:valid + label {
   transform: translateY(3px);
   transition: 0.5s;

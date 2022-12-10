@@ -1,8 +1,9 @@
 <template>
   <div class="headerMenu">
-    <signInModal v-show="isShowModal"
-                 :show="isShowModal"
-                 @close="toggleModal"/>
+    <signInModal
+        v-show="isShowModal"
+        :show="isShowModal"
+        @close="toggleModal"/>
     <headerMenuButton
         v-for="tab in tabs"
         :key="tab"
@@ -11,8 +12,8 @@
     >
       {{ tab }}
     </headerMenuButton>
-    <myButton class="sign-button">Войти</myButton>
-    <userSign @click="toggleModal" class="sign"/>
+    <myButton @click="toggleModal" class="sign-button">Войти</myButton>
+    <userSign class="sign"/>
   </div>
 </template>
 
@@ -84,6 +85,7 @@ export default {
 .sign-button {
   position: fixed;
   left: 1170px;
+  top: 60px;
   width: 150px;
   height: 25px;
 }
