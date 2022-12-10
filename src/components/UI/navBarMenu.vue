@@ -1,7 +1,8 @@
 <template>
   <div class="headerMenu">
-<!--    <div class="line"/>-->
-
+    <signInModal v-show="isShowModal"
+                 :show="isShowModal"
+                 @close="toggleModal"/>
     <headerMenuButton
         v-for="tab in tabs"
         :key="tab"
@@ -10,8 +11,8 @@
     >
       {{ tab }}
     </headerMenuButton>
-
-    <userSign class="sign"/>
+    <myButton class="sign-button">Войти</myButton>
+    <userSign @click="toggleModal" class="sign"/>
   </div>
 </template>
 
@@ -20,6 +21,8 @@ import headerMenuButton from "@/components/UI/navBarButton";
 import userSign from "@/components/UI/userSign";
 import vacancyAnonce from "@/components/vacancyAnonce";
 import specialistAnonce from "@/components/specialistAnonce";
+import myButton from "@/components/UI/button";
+import signInModal from "@/components/signInModal";
 
 export default {
   name: "navBarMenu",
@@ -28,13 +31,17 @@ export default {
     headerMenuButton,
     userSign,
     vacancyAnonce,
-    specialistAnonce
+    specialistAnonce,
+    myButton,
+    signInModal,
   },
 
   data() {
     return {
       currentTab: 'vacancyAnonce',
       tabs: ['vacancyAnonce', 'specialistAnonce', 'Компании'],
+
+      isShowModal: false,
     }
   },
 
@@ -46,6 +53,10 @@ export default {
   methods: {
     handleChangeTab(tab) {
       this.$store.dispatch('updateCurrentTab', tab)
+    },
+
+    toggleModal() {
+      this.isShowModal = !this.isShowModal
     },
   }
 
@@ -59,7 +70,7 @@ export default {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 35px;
+  gap: 30px;
   height: 25px;
 }
 
@@ -70,4 +81,10 @@ export default {
   padding-bottom: 19px;
 }
 
+.sign-button {
+  position: fixed;
+  left: 1170px;
+  width: 150px;
+  height: 25px;
+}
 </style>

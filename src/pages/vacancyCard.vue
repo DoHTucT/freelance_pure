@@ -1,5 +1,9 @@
 <template>
   <div>
+    <vacancyResponseModal
+        v-show="isShowModal"
+        :show="isShowModal"
+        @close="toggleModal"/>
     <myHeader/>
     <div class="container">
       <div class="h1">
@@ -45,7 +49,7 @@
           Figma и, в меньшей степени, Sketch. Большим плюсом будет знание редактуры (например, по книгам Максима
           Ильяхова) — для изложения в макетах своих мыслей кратко, ясно и убедительно
         </div>
-        <myButton>Откликнуться</myButton>
+        <myButton @click="toggleModal">Откликнуться</myButton>
         <div class="line"/>
         <div class="vacancy-name">Похожие вакансии</div>
         <vacancyAnonce/>
@@ -62,6 +66,7 @@ import myHeader from "@/components/navBar";
 import myButton from "@/components/UI/button";
 import vacancyAnonce from "@/components/vacancyAnonce";
 import companyAnonce from "@/components/UI/companyAnonce";
+import vacancyResponseModal from "@/components/vacancyResponseModal";
 
 export default {
   name: "vacancyCard",
@@ -71,6 +76,19 @@ export default {
     myButton,
     vacancyAnonce,
     companyAnonce,
+    vacancyResponseModal,
+  },
+
+  data() {
+    return {
+      isShowModal: false,
+    }
+  },
+
+  methods: {
+    toggleModal() {
+      this.isShowModal = !this.isShowModal
+    }
   }
 }
 </script>

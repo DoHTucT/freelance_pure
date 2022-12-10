@@ -66,6 +66,7 @@ export default {
   gap: 4px;
   width: 174px;
   height: 24px;
+  cursor: pointer;
 }
 
 .back-text {
