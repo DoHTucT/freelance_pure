@@ -15,6 +15,9 @@
           <component :is="currentTab" class="tab"></component>
         </div>
       </div>
+      <img @click="closeModal"
+           class="cross"
+           src="../../public/pic/close.svg" alt="">
     </div>
   </div>
 </template>
@@ -22,6 +25,7 @@
 <script>
 import signInContent from "@/components/signInContent";
 import registerContent from "@/components/registerContent";
+
 
 export default {
   name: "signInModal",
@@ -92,15 +96,22 @@ export default {
   font-weight: 700;
   font-size: 24px;
   line-height: 150%;
-  /*color: #7A7D83;*/
   margin-bottom: 23px;
 }
 
 .tab-button{
   color: #7A7D83;
+  cursor: pointer;
 }
 
 .tab-button.active{
   color: #11316A
+}
+
+.cross{
+  position: relative;
+  left: 350px;
+  bottom: 480px;
+  cursor: pointer;
 }
 </style>

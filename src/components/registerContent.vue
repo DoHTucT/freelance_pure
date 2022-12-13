@@ -1,5 +1,9 @@
 <template>
   <div class="container">
+    <roleChoosingModal
+        v-show="isShowModal"
+        :show="isShowModal"
+        @close="toggleModal"/>
     <input class="input" type="text" id="login" required>
     <label class="label" for="login">Ваш логин</label>
     <input
@@ -17,7 +21,10 @@
       </label>
       <div class="forgot">Забыли пароль?</div>
     </div>
-    <myButton class="button">Войти</myButton>
+    <myButton
+        @click="toggleModal"
+        class="button">
+      Зарегистрироваться</myButton>
     <div class="sm-enter-text">Войти через социальные сети:</div>
     <div class="sm-frame">
       <img class="sm" src="../../public/pic/google.svg" alt="">
@@ -32,11 +39,13 @@
 <script>
 import { vMaska } from "maska";
 import myButton from "@/components/UI/button";
+import roleChoosingModal from "@/components/roleChoosingModal";
 
 export default {
   name: "registerContent",
   components: {
     myButton,
+    roleChoosingModal
   },
 
   directives: { maska: vMaska },
@@ -45,8 +54,24 @@ export default {
     return {
       form: {
         phone: ''
-      }
+      },
+      isShowModal: false,
     }
+  },
+
+  computed: {
+    currentTab: function () {
+      return this.$store.state.currentTab
+    }
+  },
+  methods: {
+    handleChangeTab(tab) {
+      this.$store.dispatch('updateCurrentTab', tab)
+    },
+
+    toggleModal() {
+      this.isShowModal = !this.isShowModal
+    },
   }
 }
 </script>

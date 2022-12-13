@@ -1,54 +1,23 @@
 <template>
-  <div class="frame">
-    <component :is="currentTab"></component>
-
+  <div class="">
+    <vacancyAnonce/>
+    <vacancyAnonce/>
+    <vacancyAnonce/>
   </div>
 </template>
 
 <script>
 import vacancyAnonce from "@/components/vacancyAnonce";
-import vacancyAnonceId2Temp from "@/components/vacancyAnonceId2Temp";
-import vacancyAnonceId3Temp from "@/components/vacancyAnonceId3Temp";
-import vacancyAnonceInactive from "@/components/vacancyAnonceInactive";
-import specialistAnonce from "@/components/specialistAnonce";
 
 export default {
   name: "vacancyFrame",
 
-
   components: {
-    vacancyAnonce,
-    vacancyAnonceId2Temp,
-    vacancyAnonceId3Temp,
-    vacancyAnonceInactive,
-    specialistAnonce,
-  },
-  data() {
-    return {
-      vacancy: [
-        {id: 1, component: vacancyAnonce},
-        {id: 2, component: vacancyAnonceId2Temp},
-        {id: 3, component: vacancyAnonceId3Temp}
-      ],
-
-      specialists: [
-        {id: 1}, {id: 2}, {id: 3}
-      ]
-    }
-  },
-  computed: {
-    currentTab: function () {
-      return this.$store.state.currentTab
-    }
+    vacancyAnonce
   }
 }
 </script>
 
 <style scoped>
-.frame {
-  float: left;
-  width: 800px;
-  margin-top: 40px;
-  margin-left: 30px;
-}
+
 </style>

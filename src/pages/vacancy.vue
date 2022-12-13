@@ -4,7 +4,7 @@
 
     <myHeader/>
     <asideMenu/>
-    <vacancyFrame/>
+    <mainFrame/>
   </div>
 </template>
 
@@ -12,7 +12,7 @@
 import navBar from "@/components/navBar";
 import myHeader from "@/components/header";
 import asideMenu from "@/components/asideMenu";
-import vacancyFrame from "@/components/vacancyFrame";
+import mainFrame from "@/components/mainFrame";
 
 export default {
   name: "vacancy",
@@ -21,7 +21,7 @@ export default {
     navBar,
     myHeader,
     asideMenu,
-    vacancyFrame,
+    mainFrame,
   }
 }
 </script>

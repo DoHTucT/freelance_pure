@@ -42,14 +42,18 @@ export default {
 </script>
 
 <style scoped>
-.card {
+.card{
   width: 800px;
   height: 272px;
-  background: #FFFFFF;
-  box-shadow: 0px 40px 100px rgba(17, 49, 106, 0.07), 0px 15px 32px rgba(17, 49, 106, 0.05), 0px 3px 9px rgba(0, 0, 0, 0.03);
   border-radius: 12px;
   margin-bottom: 40px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #E0E7EE;
   cursor: pointer;
+}
+.card:hover {
+  background: #FFFFFF;
+  box-shadow: 0px 40px 100px rgba(17, 49, 106, 0.07), 0px 15px 32px rgba(17, 49, 106, 0.05), 0px 3px 9px rgba(0, 0, 0, 0.03);
 }
 
 .avatar {
@@ -70,7 +74,6 @@ export default {
 .card-header {
   display: flex;
   flex-direction: row;
-  /*align-items: flex-start;*/
   padding: 0px;
   width: 664px;
   gap: 16px;

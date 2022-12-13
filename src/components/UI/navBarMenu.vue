@@ -20,8 +20,6 @@
 <script>
 import headerMenuButton from "@/components/UI/navBarButton";
 import userSign from "@/components/UI/userSign";
-import vacancyAnonce from "@/components/vacancyAnonce";
-import specialistAnonce from "@/components/specialistAnonce";
 import myButton from "@/components/UI/button";
 import signInModal from "@/components/signInModal";
 
@@ -31,16 +29,14 @@ export default {
   components: {
     headerMenuButton,
     userSign,
-    vacancyAnonce,
-    specialistAnonce,
     myButton,
     signInModal,
   },
 
   data() {
     return {
-      currentTab: 'vacancyAnonce',
-      tabs: ['vacancyAnonce', 'specialistAnonce', 'Компании'],
+      currentTab: 'vacancyFrame',
+      tabs: ['vacancyFrame', 'specialistsFrame', 'Компании'],
 
       isShowModal: false,
     }
