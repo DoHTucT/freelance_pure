@@ -3,11 +3,16 @@
     <div @click.stop class="signIn-frame">
       <div class="signIn-container">
         <div class="signIn-menu">
-          <div class="button">Вход</div>
-          <div class="button">Регистрация</div>
+          <div v-for="tab in tabs"
+               :key="tab"
+               :class="['tab-button', { active: currentTab === tab }]"
+               @click="currentTab = tab">
+            {{ tab }}
+          </div>
+
         </div>
         <div class="content-frame">
-          <signInContent></signInContent>
+          <component :is="currentTab" class="tab"></component>
         </div>
       </div>
     </div>
@@ -23,6 +28,13 @@ export default {
   components: {
     signInContent,
     registerContent
+  },
+
+  data() {
+    return {
+      currentTab: 'signInContent',
+      tabs: ['signInContent', 'registerContent']
+    }
   },
   props: {
     show: {
@@ -80,8 +92,15 @@ export default {
   font-weight: 700;
   font-size: 24px;
   line-height: 150%;
-  color: #11316A;
+  /*color: #7A7D83;*/
   margin-bottom: 23px;
 }
 
+.tab-button{
+  color: #7A7D83;
+}
+
+.tab-button.active{
+  color: #11316A
+}
 </style>
