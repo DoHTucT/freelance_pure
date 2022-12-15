@@ -49,7 +49,7 @@ export default {
   padding-top: 25px;
 }
 
-.row input:focus + label ,
+.row input:focus + label,
 .row input:valid + label {
   transform: translateY(-82px);
   transition: 0.5s;

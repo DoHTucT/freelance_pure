@@ -50,7 +50,7 @@ export default {
   name: "freelancerProfile",
   components: {
     navBar,
-freelancerProfileCard,
+    freelancerProfileCard,
   }
 }
 </script>

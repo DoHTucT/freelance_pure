@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import {createRouter, createWebHistory} from 'vue-router'
 import vacancy from "@/pages/vacancy";
 import vacancyAnonce from "@/components/vacancyAnonce";
 import vacancyCard from "@/pages/vacancyCard";
@@ -7,32 +7,32 @@ import freelancerProfile from "@/pages/freelancerProfile";
 import personalAccount from "@/pages/personalAccount";
 
 const routes = [
-  {
-    path: '/',
-    component: vacancy
-  },
-  {
-    path: '/vacancycard',
-    component: vacancyCard
-  },
-  {
-    path: '/companyprofile',
-    component: companyProfile
-  },
-  {
-    path: '/freelancerprofile',
-    component: freelancerProfile
-  },
-  {
-    path: '/account',
-    component: personalAccount
-  }
+    {
+        path: '/',
+        component: vacancy
+    },
+    {
+        path: '/vacancycard',
+        component: vacancyCard
+    },
+    {
+        path: '/companyprofile',
+        component: companyProfile
+    },
+    {
+        path: '/freelancerprofile',
+        component: freelancerProfile
+    },
+    {
+        path: '/account',
+        component: personalAccount
+    }
 
 ]
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes
+    history: createWebHistory(process.env.BASE_URL),
+    routes
 })
 
 // router.beforeEach((to, from) =>{

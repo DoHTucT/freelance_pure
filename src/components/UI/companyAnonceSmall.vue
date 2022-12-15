@@ -1,45 +1,45 @@
 <template>
   <div class="card">
-  <div class="card-container">
-    <div class="card-header">
-      <div class="company-h1">
-        <img id="logo" src="../../../public/pic/ozon.png" height="48" width="48"/>
-        <div class="company-name">Озон информационные технологии</div>
-        <div class="rating">
-          <div class="stars">
-            <img class="star" src="../../../public/pic/starFull.svg"/>
-            <img class="star" src="../../../public/pic/starFull.svg"/>
-            <img class="star" src="../../../public/pic/starFull.svg"/>
-            <img class="star" src="../../../public/pic/starFull.svg"/>
-            <img class="star" src="../../../public/pic/starFull.svg"/>
+    <div class="card-container">
+      <div class="card-header">
+        <div class="company-h1">
+          <img id="logo" src="../../../public/pic/ozon.png" height="48" width="48"/>
+          <div class="company-name">Озон информационные технологии</div>
+          <div class="rating">
+            <div class="stars">
+              <img class="star" src="../../../public/pic/starFull.svg"/>
+              <img class="star" src="../../../public/pic/starFull.svg"/>
+              <img class="star" src="../../../public/pic/starFull.svg"/>
+              <img class="star" src="../../../public/pic/starFull.svg"/>
+              <img class="star" src="../../../public/pic/starFull.svg"/>
+            </div>
+            <div class="rating-num">(5.0)</div>
           </div>
-          <div class="rating-num">(5.0)</div>
+        </div>
+      </div>
+      <div class="coordinates">
+        <div class="office">Головной офис:</div>
+        <div class="contacts tel">
+          <div class="pic">
+            <img src="../../../public/pic/tel.svg"/>
+          </div>
+          <div>+7 (499) 226-26-38</div>
+        </div>
+        <div class="contacts adress">
+          <div class="pic">
+            <img src="../../../public/pic/adress.svg"/>
+          </div>
+          <div class="">Россия, г. Москва, Одесская д 2</div>
+        </div>
+        <div class="contacts link">
+          <div class="pic">
+            <img src="../../../public/pic/link.svg"/>
+          </div>
+          <div class=""><a href="https://www.ozon.ru/">ozon.ru</a></div>
         </div>
       </div>
     </div>
-    <div class="coordinates">
-      <div class="office">Головной офис:</div>
-      <div class="contacts tel">
-        <div class="pic">
-          <img src="../../../public/pic/tel.svg"/>
-        </div>
-        <div>+7 (499) 226-26-38</div>
-      </div>
-      <div class="contacts adress">
-        <div class="pic">
-          <img src="../../../public/pic/adress.svg"/>
-        </div>
-        <div class="">Россия, г. Москва, Одесская д 2</div>
-      </div>
-      <div class="contacts link">
-        <div class="pic">
-          <img src="../../../public/pic/link.svg"/>
-        </div>
-        <div class=""><a href="https://www.ozon.ru/">ozon.ru</a></div>
-      </div>
-    </div>
-  </div>
-  <button class="i-wont-work">Хочу здесь работать</button>
+    <button class="i-wont-work">Хочу здесь работать</button>
   </div>
 </template>
 
@@ -50,7 +50,7 @@ export default {
 </script>
 
 <style scoped>
-.card{
+.card {
   float: left;
   box-sizing: border-box;
   width: 384px;
@@ -61,6 +61,7 @@ export default {
   border-radius: 12px;
   box-shadow: 0px 17px 46px rgba(17, 49, 106, 0.1), 0px 7px 14px rgba(17, 49, 106, 0.06), 0px 2px 4px rgba(17, 49, 106, 0.04);
 }
+
 .card-container {
   width: 336px;
   margin-left: 24px;
@@ -150,7 +151,7 @@ export default {
   margin-right: 10px;
 }
 
-a{
+a {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -158,7 +159,7 @@ a{
   color: #11316A;
 }
 
-.i-wont-work{
+.i-wont-work {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;

@@ -99,16 +99,16 @@ export default {
   margin-bottom: 23px;
 }
 
-.tab-button{
+.tab-button {
   color: #7A7D83;
   cursor: pointer;
 }
 
-.tab-button.active{
+.tab-button.active {
   color: #11316A
 }
 
-.cross{
+.cross {
   position: relative;
   left: 350px;
   bottom: 480px;

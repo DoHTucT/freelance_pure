@@ -49,6 +49,7 @@ export default {
   cursor: pointer;
 
 }
+
 img {
   display: flex;
   float: left;

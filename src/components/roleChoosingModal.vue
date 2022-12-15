@@ -117,7 +117,7 @@ export default {
   color: #7A7D83;
 }
 
-.button:hover .h2{
+.button:hover .h2 {
   color: #11316A;
 }
 
@@ -130,11 +130,11 @@ export default {
   color: #B9BCC1;
 }
 
-.button:hover .description{
+.button:hover .description {
   color: #7A7D83;
 }
 
-.arrow{
+.arrow {
   float: right;
   position: relative;
   bottom: 20px;
@@ -142,11 +142,11 @@ export default {
   display: none;
 }
 
-.button:hover .arrow{
+.button:hover .arrow {
   display: block;
 }
 
-.cross{
+.cross {
   position: relative;
   bottom: 340px;
   left: 420px;

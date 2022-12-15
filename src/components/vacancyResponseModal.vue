@@ -1,6 +1,6 @@
 <template>
   <div class="">
-  <div @click="closeModal" class="background"/>
+    <div @click="closeModal" class="background"/>
     <div @click.stop class="response-frame">
       <div class="response-container">
         <div class="header">Ваш отклик на вакансию</div>
@@ -21,11 +21,11 @@
         </div>
         <div class="name-frame">
           <div class="name-frame-inner">
-          <img class="ava" src="../../public/pic/ava@2x.png" alt="">
+            <img class="ava" src="../../public/pic/ava@2x.png" alt="">
             Ярославцев Иван
           </div>
           <div class="eye-frame">
-          <img class="eye" src="../../public/pic/EyeBig.svg" alt="">
+            <img class="eye" src="../../public/pic/EyeBig.svg" alt="">
           </div>
         </div>
         <textarea class="textarea" placeholder="Вставить текст из предыдущего отклика?"></textarea>
@@ -43,6 +43,7 @@
 
 <script>
 import myButton from "@/components/UI/button";
+
 export default {
   name: "vacancyResponseModal",
 
@@ -157,12 +158,12 @@ export default {
   height: 82px;
 }
 
-.ava{
+.ava {
   width: 40px;
   height: 40px;
 }
 
-.name-frame-inner{
+.name-frame-inner {
   float: left;
   font-weight: 700;
   font-size: 24px;
@@ -176,7 +177,7 @@ export default {
   gap: 8px;
 }
 
-.eye-frame{
+.eye-frame {
   float: right;
   width: 40px;
   height: 40px;
@@ -185,12 +186,12 @@ export default {
   margin-top: 23px;
 }
 
-.eye{
+.eye {
   margin-top: 8px;
   margin-left: 8px;
 }
 
-.textarea{
+.textarea {
   box-sizing: border-box;
   width: 592px;
   height: 104px;
@@ -200,15 +201,16 @@ export default {
   resize: none;
   padding: 16px;
 }
-.textarea::placeholder{
-  font-family: 'Manrope',sans-serif;
+
+.textarea::placeholder {
+  font-family: 'Manrope', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   color: #7A7D83;
 }
 
-.insert{
+.insert {
   position: relative;
   z-index: 7;
   left: 505px;
@@ -221,13 +223,13 @@ export default {
   cursor: pointer;
 }
 
-.button-frame{
+.button-frame {
   display: flex;
   gap: 32px;
   height: 56px;
 }
 
-.button{
+.button {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -239,7 +241,7 @@ export default {
   cursor: pointer;
 }
 
-#cancel{
+#cancel {
   box-sizing: border-box;
   border: 1.5px solid #E0E7EE;
   background-color: #FFFFFF;

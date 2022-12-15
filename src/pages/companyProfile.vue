@@ -92,7 +92,7 @@ export default {
   border-top: 1px solid #E0E7EE;
 }
 
-.about{
+.about {
   margin-top: 29px;
   font-weight: 700;
   font-size: 24px;

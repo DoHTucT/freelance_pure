@@ -99,7 +99,7 @@ form {
   opacity: 1;
 }
 
-.text{
+.text {
   display: inline-block;
   margin-left: 8px;
 }

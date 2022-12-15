@@ -4,9 +4,7 @@ export default createStore({
     state: {
         currentTab: 'vacancyAnonce'
     },
-    getters: {
-
-    },
+    getters: {},
     mutations: {
         setCurrentTab(state, value) {
             state.currentTab = value;

@@ -24,7 +24,8 @@
     <myButton
         @click="toggleModal"
         class="button">
-      Зарегистрироваться</myButton>
+      Зарегистрироваться
+    </myButton>
     <div class="sm-enter-text">Войти через социальные сети:</div>
     <div class="sm-frame">
       <img class="sm" src="../../public/pic/google.svg" alt="">
@@ -37,7 +38,7 @@
 </template>
 
 <script>
-import { vMaska } from "maska";
+import {vMaska} from "maska";
 import myButton from "@/components/UI/button";
 import roleChoosingModal from "@/components/roleChoosingModal";
 
@@ -48,7 +49,7 @@ export default {
     roleChoosingModal
   },
 
-  directives: { maska: vMaska },
+  directives: {maska: vMaska},
 
   data() {
     return {

@@ -21,9 +21,10 @@ export default {
 </script>
 
 <style scoped>
-.post-header{
+.post-header {
   margin-top: 72px;
 }
+
 #h1 {
   margin-top: 36px;
   font-family: sans-serif;
@@ -33,7 +34,8 @@ export default {
   line-height: 150%;
   color: #252931;
 }
-.search{
+
+.search {
   margin-top: 28px;
 }
 </style>

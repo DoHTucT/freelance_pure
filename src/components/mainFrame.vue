@@ -21,9 +21,7 @@ export default {
     vacancyFrame,
     specialistsFrame
   },
-  data() {
 
-  },
   computed: {
     currentTab: function () {
       return this.$store.state.currentTab

@@ -1,7 +1,7 @@
 <template>
   <div class="">
-  <input class="input" type="text" placeholder="Вы ищите...">
-  <img src="../../../public/pic/Serch.svg" alt="">
+    <input class="input" type="text" placeholder="Вы ищите...">
+    <img src="../../../public/pic/Serch.svg" alt="">
   </div>
 </template>
 
@@ -37,7 +37,7 @@ input::-webkit-input-placeholder {
   line-height: 150%;
 }
 
-img{
+img {
   position: relative;
   float: right;
   bottom: 35px;
