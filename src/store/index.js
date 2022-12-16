@@ -2,7 +2,7 @@ import {createStore} from 'vuex'
 
 export default createStore({
     state: {
-        currentTab: 'vacancyAnonce'
+        currentTab: 'vacancyFrame'
     },
     getters: {},
     mutations: {

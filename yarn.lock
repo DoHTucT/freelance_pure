@@ -4194,6 +4194,11 @@
   dependencies:
     "find-up" "^4.0.0"
 
+"portal-vue@^3.0.0-beta.0":
+  "integrity" "sha512-9eprMxNURLx6ijbcgkWjYNcTWJYu/H8QF8nyAeBzOmk9lKCea01BW1hYBeLkgz+AestmPOvznAEOFmNuO4Adjw=="
+  "resolved" "https://registry.npmjs.org/portal-vue/-/portal-vue-3.0.0.tgz"
+  "version" "3.0.0"
+
 "portfinder@^1.0.26":
   "integrity" "sha512-on2ZJVVDXRADWE6jnQaX0ioEylzgBpQk8r55NE4wjXW1ZxO+BgDlY6DXwj20i0V8eB4SenDQ00WEaxfiIQPcxg=="
   "resolved" "https://registry.npmmirror.com/portfinder/-/portfinder-1.0.32.tgz"
@@ -5405,9 +5410,9 @@
   "resolved" "https://registry.npmjs.org/vue-text-mask/-/vue-text-mask-6.1.2.tgz"
   "version" "6.1.2"
 
-"vue@*", "vue@^2 || ^3.2.13", "vue@^3.2.0", "vue@^3.2.13", "vue@3.2.45":
+"vue@*", "vue@^2 || ^3.2.13", "vue@^3.0.4", "vue@^3.2.0", "vue@^3.2.45", "vue@3.2.45":
   "integrity" "sha512-9Nx/Mg2b2xWlXykmCwiTUCWHbWIj53bnkizBxKai1g61f2Xit700A1ljowpTIM11e3uipOeiPcSqnmBg6gyiaA=="
-  "resolved" "https://registry.npmmirror.com/vue/-/vue-3.2.45.tgz"
+  "resolved" "https://registry.npmjs.org/vue/-/vue-3.2.45.tgz"
   "version" "3.2.45"
   dependencies:
     "@vue/compiler-dom" "3.2.45"

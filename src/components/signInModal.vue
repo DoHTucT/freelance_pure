@@ -12,7 +12,7 @@
 
         </div>
         <div class="content-frame">
-          <component :is="currentTab" class="tab"></component>
+          <component :is="currentTab" class="tab"/>
         </div>
       </div>
       <img @click="closeModal"
