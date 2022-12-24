@@ -1,6 +1,5 @@
 <template>
   <div class="post-header">
-    <div class="h1">Каталог вакансий</div>
     <div class="h1">{{ currentTab.title }}</div>
     <searchInput class="search"/>
     <headerMenu/>

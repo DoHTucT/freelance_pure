@@ -6,7 +6,7 @@
         @close="toggleModal"/>
     <headerMenuButton
         v-for="tab in tabs"
-        :key="tab.key"
+        :key="tab"
         :class="['tab-button', { active: currentTab === tab.key }]"
         @click="$router.push('/'), handleChangeTab(tab)"
     >
@@ -79,6 +79,8 @@ export default {
   opacity: 1;
   border-bottom: 2px solid #11316A;
   padding-bottom: 19px;
+  transition: 0.2s;
+
 }
 
 .sign-button {

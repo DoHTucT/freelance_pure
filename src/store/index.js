@@ -1,5 +1,5 @@
 import {createStore} from 'vuex'
-import currentTab from "@/store/modules/currentTab";
+import navBarCurrentTab from "@/store/modules/navBarCurrentTab";
 
 export default createStore({
     state: {
@@ -21,6 +21,6 @@ export default createStore({
     },
 
     modules: {
-        currentTab
+        navBarCurrentTab
     }
 })

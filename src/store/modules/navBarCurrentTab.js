@@ -1,6 +1,6 @@
 export default {
     state: {
-        currentTab: 'vacancyFrame'
+        currentTab: { key: 'vacancyFrame', tab: 'Вакансии', title: 'Каталог вакансий' }
     },
 
     getters: {},
