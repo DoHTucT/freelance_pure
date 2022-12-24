@@ -3,7 +3,7 @@ import currentTab from "@/store/modules/currentTab";
 
 export default createStore({
     state: {
-        currentTab: { key: 'vacancyFrame' }
+        currentTab: { key: 'vacancyFrame', tab: 'Вакансии', title: 'Каталог вакансий' }
     },
 
     getters: {},
@@ -13,11 +13,13 @@ export default createStore({
             state.currentTab = value;
         }
     },
+
     actions: {
         updateCurrentTab(context, value) {
             context.commit('setCurrentTab', value);
         }
     },
+
     modules: {
         currentTab
     }

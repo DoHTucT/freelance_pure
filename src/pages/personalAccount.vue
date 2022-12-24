@@ -243,5 +243,6 @@ export default {
   display: flex;
   align-items: center;
   color: #11316A;
+  cursor: pointer;
 }
 </style>

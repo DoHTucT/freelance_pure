@@ -1,6 +1,7 @@
 <template>
   <div class="post-header">
-    <div id="h1">Каталог вакансий</div>
+    <div class="h1">Каталог вакансий</div>
+    <div class="h1">{{ currentTab.title }}</div>
     <searchInput class="search"/>
     <headerMenu/>
   </div>
@@ -20,7 +21,9 @@ export default {
   },
 
   computed:
-      mapState(['currentTab'])
+      mapState(['currentTab']),
+
+
 }
 </script>
 
@@ -29,7 +32,7 @@ export default {
   margin-top: 72px;
 }
 
-#h1 {
+.h1 {
   margin-top: 36px;
   font-family: sans-serif;
   font-style: normal;

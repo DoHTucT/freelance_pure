@@ -6,11 +6,11 @@
         @close="toggleModal"/>
     <headerMenuButton
         v-for="tab in tabs"
-        :key="tab"
+        :key="tab.key"
         :class="['tab-button', { active: currentTab === tab.key }]"
-        @click="handleChangeTab(tab)"
+        @click="$router.push('/'), handleChangeTab(tab)"
     >
-      {{ tab.title }}
+      {{ tab.tab }}
     </headerMenuButton>
     <myButton @click="toggleModal" class="sign-button">Войти</myButton>
     <userSign class="sign"/>
@@ -35,10 +35,10 @@ export default {
 
   data() {
     return {
-      currentTab: 'vacancyFrame',
-      tabs: [{ key: 'vacancyFrame', title: 'Вакансии' },
-        { key: 'specialistsFrame', title: 'Специалисты' },
-        { key: 'company', title: 'Компании' }],
+      currentTab: {key: 'vacancyFrame', tab: 'Вакансии', title: 'Каталог вакансий'},
+      tabs: [{key: 'vacancyFrame', tab: 'Вакансии', title: 'Каталог вакансий'},
+        {key: 'specialistsFrame', tab: 'Специалисты', title: 'Каталог специалистов'},
+        {key: 'company', tab: 'Компании', title: 'Каталог компаний'}],
 
       isShowModal: false,
     }
