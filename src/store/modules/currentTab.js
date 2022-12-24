@@ -1,9 +1,6 @@
-import {createStore} from 'vuex'
-import currentTab from "@/store/modules/currentTab";
-
-export default createStore({
+export default {
     state: {
-        currentTab: { key: 'vacancyFrame' }
+        currentTab: 'vacancyFrame'
     },
 
     getters: {},
@@ -13,12 +10,10 @@ export default createStore({
             state.currentTab = value;
         }
     },
+
     actions: {
         updateCurrentTab(context, value) {
             context.commit('setCurrentTab', value);
         }
     },
-    modules: {
-        currentTab
-    }
-})
+}

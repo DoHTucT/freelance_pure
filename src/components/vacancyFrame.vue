@@ -10,7 +10,7 @@
 import vacancyAnonce from "@/components/vacancyAnonce";
 
 export default {
-  name: "vacancyFrame",
+  name: "Вакансии",
 
   components: {
     vacancyAnonce

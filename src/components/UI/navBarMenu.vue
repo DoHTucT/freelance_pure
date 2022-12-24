@@ -7,10 +7,10 @@
     <headerMenuButton
         v-for="tab in tabs"
         :key="tab"
-        :class="['tab-button', { active: currentTab === tab }]"
+        :class="['tab-button', { active: currentTab === tab.key }]"
         @click="handleChangeTab(tab)"
     >
-      {{ tab }}
+      {{ tab.title }}
     </headerMenuButton>
     <myButton @click="toggleModal" class="sign-button">Войти</myButton>
     <userSign class="sign"/>
@@ -36,7 +36,9 @@ export default {
   data() {
     return {
       currentTab: 'vacancyFrame',
-      tabs: ['vacancyFrame', 'specialistsFrame', 'Компании'],
+      tabs: [{ key: 'vacancyFrame', title: 'Вакансии' },
+        { key: 'specialistsFrame', title: 'Специалисты' },
+        { key: 'company', title: 'Компании' }],
 
       isShowModal: false,
     }
@@ -47,17 +49,18 @@ export default {
       return this.$store.state.currentTab
     }
   },
+
   methods: {
     handleChangeTab(tab) {
-      this.$store.dispatch('updateCurrentTab', tab)
+      this.$store.dispatch('updateCurrentTab', tab.key)
     },
 
     toggleModal() {
       this.isShowModal = !this.isShowModal
     },
   }
-
 }
+
 </script>
 
 <style scoped>

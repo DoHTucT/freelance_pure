@@ -9,6 +9,7 @@
 <script>
 import searchInput from "@/components/UI/searchInput";
 import headerMenu from "@/components/UI/headerMenu";
+import {mapState} from 'vuex'
 
 export default {
   name: "myHeader",
@@ -16,7 +17,10 @@ export default {
   components: {
     searchInput,
     headerMenu
-  }
+  },
+
+  computed:
+      mapState(['currentTab'])
 }
 </script>
 

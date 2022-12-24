@@ -22,7 +22,7 @@
       <div class="forgot">Забыли пароль?</div>
     </div>
     <myButton
-        @click="toggleModal"
+        @click="toggleModal($event), hideParentModal"
         class="button">
       Зарегистрироваться
     </myButton>
@@ -71,8 +71,13 @@ export default {
     },
 
     toggleModal() {
-      this.isShowModal = !this.isShowModal
+      this.isShowModal = !this.isShowModal;
+
     },
+
+    hideParentModal() {
+      this.$emit('hideModal')
+    }
   }
 }
 </script>

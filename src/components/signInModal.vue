@@ -1,13 +1,15 @@
 <template>
-  <div @click="closeModal" class="background">
+  <div @click="closeModal"
+       :class="['background', { hide: hideModal === true }]"
+       @hideModal="hideModal">
     <div @click.stop class="signIn-frame">
       <div class="signIn-container">
         <div class="signIn-menu">
           <div v-for="tab in tabs"
                :key="tab"
-               :class="['tab-button', { active: currentTab === tab }]"
-               @click="currentTab = tab">
-            {{ tab }}
+               :class="['tab-button', { active: currentTab === tab.key }]"
+               @click="currentTab = tab.key">
+            {{ tab.title }}
           </div>
 
         </div>
@@ -37,7 +39,8 @@ export default {
   data() {
     return {
       currentTab: 'signInContent',
-      tabs: ['signInContent', 'registerContent']
+      tabs: [{ key: 'signInContent', title: 'Вход' }, { key: 'registerContent', title: 'Регистрация' }],
+
     }
   },
   props: {
@@ -50,6 +53,11 @@ export default {
   methods: {
     closeModal() {
       this.$emit('close');
+    },
+
+    hideModal() {
+      this.hideModal = true;
+      console.log(hideModal)
     }
   }
 }
@@ -65,6 +73,10 @@ export default {
   background: rgba(37, 41, 49, 0.6);;
   backdrop-filter: blur(3px);
   z-index: 5;
+}
+
+.hide {
+  z-index: -100;
 }
 
 .signIn-frame {
