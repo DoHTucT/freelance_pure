@@ -28,7 +28,7 @@ export default {
 
 <style scoped>
 .post-header {
-  margin-top: 72px;
+  margin-top: 140px;
 }
 
 .h1 {
