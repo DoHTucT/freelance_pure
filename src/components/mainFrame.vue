@@ -1,6 +1,6 @@
 <template>
   <div class="frame">
-    <component :is="currentTab"></component>
+    <component :is="currentTab.key"></component>
 
   </div>
 </template>

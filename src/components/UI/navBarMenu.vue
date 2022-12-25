@@ -6,8 +6,8 @@
         @close="toggleModal"/>
     <headerMenuButton
         v-for="tab in tabs"
-        :key="tab"
-        :class="['tab-button', { active: currentTab === tab.key }]"
+        :key="tab.key"
+        :class="['tab-button', { active: currentTab.key === tab.key }]"
         @click="$router.push('/'), handleChangeTab(tab)"
     >
       {{ tab.tab }}
@@ -35,7 +35,7 @@ export default {
 
   data() {
     return {
-      currentTab: {key: 'vacancyFrame', tab: 'Вакансии', title: 'Каталог вакансий'},
+      // currentTab: {key: 'vacancyFrame', tab: 'Вакансии', title: 'Каталог вакансий'},
       tabs: [{key: 'vacancyFrame', tab: 'Вакансии', title: 'Каталог вакансий'},
         {key: 'specialistsFrame', tab: 'Специалисты', title: 'Каталог специалистов'},
         {key: 'company', tab: 'Компании', title: 'Каталог компаний'}],
@@ -52,7 +52,7 @@ export default {
 
   methods: {
     handleChangeTab(tab) {
-      this.$store.dispatch('updateCurrentTab', tab.key)
+      this.$store.dispatch('updateCurrentTab', tab)
     },
 
     toggleModal() {
