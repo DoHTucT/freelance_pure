@@ -1,10 +1,26 @@
 <template>
   <div class="menu">
-    <asideInput class="input" placeholderValue="Город"/>
-    <asideInput class="input" placeholderValue="Вознаграждение"/>
-    <asideInput class="input" placeholderValue="Тип работы"/>
-    <asideInput class="input" placeholderValue="Занятость"/>
-    <asideInput class="input" placeholderValue="Опыт работы"/>
+    <asideInput class="input"
+                placeholderValue="Город"
+                v-model="cityInput"
+    />
+    {{ cityInput }}
+    <asideInput class="input"
+                placeholderValue="Вознаграждение"
+                v-model="rewardUInput"
+    />
+    <asideInput class="input"
+                placeholderValue="Тип работы"
+                v-model="typeInput"
+    />
+    <asideInput class="input"
+                placeholderValue="Занятость"
+                v-model="occupationInput"
+    />
+    <asideInput class="input"
+                placeholderValue="Опыт работы"
+                v-model="experienceInput"
+    />
   </div>
 </template>
 
@@ -13,9 +29,21 @@ import asideInput from "@/components/UI/asideInput";
 
 export default {
   name: "asideMenu",
+
   props: ['placeholderValue'],
+
   components: {
     asideInput
+  },
+
+  data() {
+    return {
+      cityInput: '',
+      rewardUInput: '',
+      typeInput: '',
+      occupationInput: '',
+      experienceInput: '',
+    }
   }
 }
 </script>

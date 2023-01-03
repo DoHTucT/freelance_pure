@@ -1,8 +1,8 @@
 <template>
   <div @click="closeModal"
-       :class="['background', { hide: hideModal === true }]"
+       class="background"
        @hideModal="hideModal">
-    <div @click.stop class="signIn-frame">
+    <div @click.stop :class="['signIn-frame', { hide: hideModal === true }]">
       <div class="signIn-container">
         <div class="signIn-menu">
           <div v-for="tab in tabs"
@@ -47,7 +47,8 @@ export default {
     show: {
       type: Boolean,
       default: false,
-    }
+    },
+
   },
 
   methods: {
@@ -56,8 +57,7 @@ export default {
     },
 
     hideModal() {
-      this.hideModal = true;
-      console.log(hideModal)
+     return this.hideModal;
     }
   }
 }
@@ -75,7 +75,7 @@ export default {
   z-index: 5;
 }
 
-.hide {
+.signIn-frame.hide {
   z-index: -100;
 }
 

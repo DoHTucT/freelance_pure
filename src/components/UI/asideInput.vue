@@ -1,6 +1,9 @@
 <template>
   <div class="row">
-    <input type="text" id="live" required>
+    <input type="text"
+           id="live"
+           @input="$emit('change', $event.target.value)"
+           required>
     <label for="live">{{ placeholderValue }}</label>
     <svg id="svg" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M1 1L5 5L9 1" stroke="#B9BCC1" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -11,7 +14,11 @@
 <script>
 export default {
   name: "asideInput",
-  props: ['placeholderValue']
+  props: ['placeholderValue'],
+  model: {
+    prop: 'value',
+    event: 'change'
+  }
 }
 </script>
 
@@ -64,25 +71,6 @@ export default {
   line-height: 150%;
   color: #7A7D83;
 }
-
-/*input:focus::-webkit-input-placeholder {*/
-/*  font-weight: 600;*/
-/*  font-size: 12px;*/
-/*  line-height: 150%;*/
-/*  letter-spacing: 0.01em;*/
-/*  color: #7A7D83;*/
-/*  position: relative;*/
-/*  bottom: 25px;*/
-/*}*/
-/*input:focus:-moz-placeholder {*/
-/*  font-weight: 600;*/
-/*  font-size: 12px;*/
-/*  line-height: 150%;*/
-/*  letter-spacing: 0.01em;*/
-/*  color: #7A7D83;*/
-/*  position: relative;*/
-/*  bottom: 25px;*/
-/*}*/
 
 #svg {
   display: flex;

@@ -1,13 +1,24 @@
 <template>
   <div class="">
-    <input class="input" type="text" placeholder="Вы ищите...">
-    <img src="../../../public/pic/Serch.svg" alt="">
+    <input
+        class="input"
+        type="text"
+        placeholder="Вы ищите..."
+    v-model="searchInput"
+    >
+    <img src="../../../public/pic/Search.svg" alt="">
   </div>
 </template>
 
 <script>
 export default {
-  name: "searchInput"
+  name: "searchInput",
+
+  data(){
+    return{
+    searchInput:''
+    }
+  }
 }
 </script>
 

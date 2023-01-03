@@ -35,10 +35,9 @@ export default {
 
   data() {
     return {
-      // currentTab: {key: 'vacancyFrame', tab: 'Вакансии', title: 'Каталог вакансий'},
       tabs: [{key: 'vacancyFrame', tab: 'Вакансии', title: 'Каталог вакансий'},
-        {key: 'specialistsFrame', tab: 'Специалисты', title: 'Каталог специалистов'},
-        {key: 'company', tab: 'Компании', title: 'Каталог компаний'}],
+             {key: 'specialistsFrame', tab: 'Специалисты', title: 'Каталог специалистов'},
+             {key: 'company', tab: 'Компании', title: 'Каталог компаний'}],
 
       isShowModal: false,
     }
@@ -84,9 +83,9 @@ export default {
 }
 
 .sign-button {
-  position: fixed;
-  left: 1170px;
-  top: 60px;
+  position: relative;
+  /*left: 1170px;*/
+  /*top: 60px;*/
   width: 150px;
   height: 25px;
 }
