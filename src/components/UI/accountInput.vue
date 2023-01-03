@@ -1,6 +1,10 @@
 <template>
   <div class="row">
-    <input type="text" id="account" required>
+    <input type="text"
+           id="account"
+           :value="modelValue"
+           @input="$emit('update:modelValue', $event.target.value)"
+           required>
     <label for="account">{{ labelValue }}</label>
   </div>
 </template>
@@ -8,7 +12,8 @@
 <script>
 export default {
   name: "accountInput",
-  props: ['labelValue']
+  props: ['labelValue', 'modelValue'],
+  emits: ['update:modelValue'],
 }
 </script>
 

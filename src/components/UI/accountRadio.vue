@@ -4,14 +4,26 @@
       <div class="option">Ваш пол:</div>
       <div class="value">
         <label for="male" class="label">
-          <input type="radio" class="radio" name="sex" id="male" value="1">
+          <input type="radio"
+                 class="radio"
+                 name="sex"
+                 id="male"
+                 @change="$emit('update:modelValue', $event.target.value)"
+                 :value="modelValue"
+                 value="male">
           <span class="custom"/>
           <span class="text">Мужской</span>
         </label>
       </div>
       <div class="value">
         <label for="female" class="label">
-          <input type="radio" class="radio" name="sex" id="female" value="2">
+          <input type="radio"
+                 class="radio"
+                 name="sex"
+                 id="female"
+                 @change="$emit('update:modelValue', $event.target.value)"
+                 :value="modelValue"
+                 value="female">
           <span class="custom"/>
           <span class="text">Женский</span>
         </label>
@@ -22,7 +34,9 @@
 
 <script>
 export default {
-  name: "accountRadio"
+  name: "accountRadio",
+  props: ['modelValue'],
+  emits: ['update:modelValue'],
 }
 </script>
 

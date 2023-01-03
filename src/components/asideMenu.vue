@@ -4,7 +4,6 @@
                 placeholderValue="Город"
                 v-model="cityInput"
     />
-    {{ cityInput }}
     <asideInput class="input"
                 placeholderValue="Вознаграждение"
                 v-model="rewardUInput"

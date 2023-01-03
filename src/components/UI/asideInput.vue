@@ -2,7 +2,8 @@
   <div class="row">
     <input type="text"
            id="live"
-           @input="$emit('change', $event.target.value)"
+           :value="modelValue"
+           @input="$emit('update:modelValue', $event.target.value)"
            required>
     <label for="live">{{ placeholderValue }}</label>
     <svg id="svg" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -14,11 +15,9 @@
 <script>
 export default {
   name: "asideInput",
-  props: ['placeholderValue'],
-  model: {
-    prop: 'value',
-    event: 'change'
-  }
+  props: ['placeholderValue', 'modelValue'],
+  emits: ['update:modelValue'],
+
 }
 </script>
 

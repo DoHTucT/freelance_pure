@@ -23,15 +23,36 @@
       </div>
       <div class="h2">Личные данные</div>
       <div class="input-frame">
-        <accountInput class="input" labelValue="Ваше имя"/>
-        <accountInput class="input" labelValue="Ваша Фамилия"/>
-        <accountRadio/>
-        <accountInput class="input" label-value="Страна"/>
-        <accountInput class="input" label-value="Город"/>
+        <accountInput
+            class="input"
+            labelValue="Ваше имя"
+            v-model="accountName"/>
+        <accountInput
+            class="input"
+            labelValue="Ваша Фамилия"
+            v-model="accountSurname"/>
+        <accountRadio v-model="accountSex"/>
+        <accountInput
+            class="input"
+            label-value="Страна"
+            v-model="accountCountry"/>
+        <accountInput
+            class="input"
+            label-value="Город"
+            v-model="accountCity"/>
         <div class="line"></div>
-        <accountInput class="input" label-value="Телефон"/>
-        <accountInput class="input" label-value="Email"/>
-        <accountInput class="input" label-value="Ваш сайт (если есть)"/>
+        <accountInput
+            class="input"
+            label-value="Телефон"
+            v-model="accountPhone"/>
+        <accountInput
+            class="input"
+            label-value="Email"
+            v-model="accountEmail"/>
+        <accountInput
+            class="input"
+            label-value="Ваш сайт (если есть)"
+            v-model="accountSite"/>
         <div class="line"></div>
         <div class="button-frame">
           <button id="cancel">Отменить</button>
@@ -62,12 +83,27 @@ import accountRadio from "@/components/UI/accountRadio";
 
 export default {
   name: "personalAccount",
-  props: ['labelValue'],
+
   components: {
     navBar,
     headerButton,
     accountInput,
     accountRadio,
+  },
+
+  props: ['labelValue'],
+
+  data() {
+    return {
+      accountName: '',
+      accountSurname: '',
+      accountSex: '',
+      accountCountry: '',
+      accountCity: '',
+      accountPhone: '',
+      accountEmail: '',
+      accountSite: ''
+    }
   }
 }
 </script>
