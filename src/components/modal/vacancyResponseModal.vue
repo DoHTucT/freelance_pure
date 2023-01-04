@@ -21,11 +21,11 @@
         </div>
         <div class="name-frame">
           <div class="name-frame-inner">
-            <img class="ava" src="../../public/pic/ava@2x.png" alt="">
+            <img class="ava" src="../../../public/pic/ava@2x.png" alt="">
             Ярославцев Иван
           </div>
           <div class="eye-frame">
-            <img class="eye" src="../../public/pic/EyeBig.svg" alt="">
+            <img class="eye" src="../../../public/pic/EyeBig.svg" alt="">
           </div>
         </div>
         <textarea class="textarea"
@@ -38,7 +38,7 @@
           <myButton class="button" id="response">Откликнуться</myButton>
         </div>
       </div>
-      <img @click="closeModal" class="cross" src="../../public/pic/close.svg" alt="">
+      <img @click="closeModal" class="cross" src="../../../public/pic/close.svg" alt="">
 
     </div>
   </div>

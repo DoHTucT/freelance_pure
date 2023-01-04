@@ -1,16 +1,23 @@
 <template>
-  <div class="card" @click="$router.push('/freelancerprofile')">
-    <img class="avatar" src="../../public/pic/ava@2x.png"/>
+  <div class="card" @click="$router.push('/vacancycard')">
+    <img class="logo" src="../../../public/pic/ozon.png" height="48" width="48"/>
     <div class="content">
       <div class="card-header">
-        <div class="specialization">Дизайн и проектирование</div>
+        <div class="firm">Ozon Информационные технологии</div>
         <div class="city">Москва</div>
-        <div class="date">
-          <img src="../../public/pic/Calendar.svg" alt="" style="margin-right: 6px">
-          15.11.2022
+        <div class="info">
+          <div class="views">
+            <img src="../../../public/pic/Eye.svg" alt="" style="margin-right: 4px">
+            250
+          </div>
+          <div class="date">
+            <img src="../../../public/pic/Calendar.svg" alt="" style="margin-right: 4px">
+
+            15.11.2022
+          </div>
         </div>
       </div>
-      <div class="name">Ярославцев Иван</div>
+      <div class="vacancy-name">Дизайнер в рекламное агенство</div>
       <div class="vacancy-type">
         <div class="payment">
           <div class="option">Вознаграждение:</div>
@@ -26,9 +33,10 @@
         </div>
       </div>
       <div class="description">
-        Добрый день! Ищу студию или компанию, которой я могу предложить свои навыки веб-дизайнера. Мое портфолио
-        по ссылке. Также в данный момент продолжаю обучение по специальности «UX/UI Дизайн» в UPROCK.В формате удаленной
-        работы более 6 лет.
+        Ищем UI/UX веб-дизайнера, готового помочь с техническим дизайном проекта Workspace.ru. Нужен ответственный
+        продуктовый дизайнер, внимательный к мелочам. От специалиста потребуются хорошие знания Figma и, в меньшей
+        степени, Sketch. Большим плюсом будет знание редактуры (например, по книгам Максима Ильяхова) — для изложения в
+        макетах своих мыслей кратко, ясно и убедительно.
       </div>
     </div>
 
@@ -37,7 +45,7 @@
 
 <script>
 export default {
-  name: "specialistAnonce"
+  name: "vacancyAnonce"
 }
 </script>
 
@@ -57,10 +65,8 @@ export default {
   box-shadow: 0px 40px 100px rgba(17, 49, 106, 0.07), 0px 15px 32px rgba(17, 49, 106, 0.05), 0px 3px 9px rgba(0, 0, 0, 0.03);
 }
 
-.avatar {
+.logo {
   float: left;
-  height: 48px;
-  width: 48px;
   margin-left: 32px;
   margin-top: 32px;
 }
@@ -75,8 +81,8 @@ export default {
 .card-header {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
   padding: 0px;
-  width: 664px;
   gap: 16px;
   height: 15px;
   font-weight: 700;
@@ -87,23 +93,17 @@ export default {
   color: #7A7D83;
 }
 
-.specialization {
-  justify-content: flex-start;
-}
-
-.city {
-  justify-content: flex-start;
-}
-
-.date {
+.info {
   position: relative;
-  left: 362px;
+  left: 225px;
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
   padding: 0px;
+  gap: 16px;
   height: 16px;
-  width: 70px;
+  width: 150px;
   font-weight: 700;
   font-size: 12px;
   line-height: 150%;
@@ -112,7 +112,11 @@ export default {
   color: #7A7D83;
 }
 
-.name {
+.date, .views {
+  align-items: center;
+}
+
+.vacancy-name {
   height: 36px;
   margin-bottom: 13px;
   font-style: normal;

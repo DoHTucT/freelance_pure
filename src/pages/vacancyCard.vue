@@ -62,11 +62,11 @@
 </template>
 
 <script>
-import myHeader from "@/components/navBar";
+import myHeader from "@/components/main/navBar";
 import myButton from "@/components/UI/button";
-import vacancyAnonce from "@/components/vacancyAnonce";
-import companyAnonce from "@/components/UI/companyAnonce";
-import vacancyResponseModal from "@/components/vacancyResponseModal";
+import vacancyAnonce from "@/components/cards/vacancyAnonce";
+import companyAnonce from "@/components/cards/companyAnonce";
+import vacancyResponseModal from "@/components/modal/vacancyResponseModal";
 
 export default {
   name: "vacancyCard",

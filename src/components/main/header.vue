@@ -8,7 +8,7 @@
 
 <script>
 import searchInput from "@/components/UI/searchInput";
-import headerMenu from "@/components/UI/headerMenu";
+import headerMenu from "@/components/main/headerMenu";
 import {mapState} from 'vuex'
 
 export default {

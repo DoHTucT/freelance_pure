@@ -3,24 +3,24 @@
     <div @click.stop class="role-frame">
       <div class="h1">Что вы ищете?</div>
       <button class="button">
-        <img class="icon" src="../../public/pic/Customer.svg" alt="">
+        <img class="icon" src="../../../public/pic/Customer.svg" alt="">
         <div class="button-frame">
           <div class="h2">Я - заказчик</div>
           <div class="description">Ищу исполнителей, сотрудников</div>
-          <img class="arrow" src="../../public/pic/Arrowinround.svg" alt="">
+          <img class="arrow" src="../../../public/pic/Arrowinround.svg" alt="">
         </div>
       </button>
       <button class="button">
-        <img class="icon" src="../../public/pic/employee.svg" alt="">
+        <img class="icon" src="../../../public/pic/employee.svg" alt="">
         <div class="button-frame">
           <div class="h2">Я - исполнитель</div>
           <div class="description">Ищу вакансии, проекты или задачи</div>
-          <img class="arrow" src="../../public/pic/Arrowinround.svg" alt="">
+          <img class="arrow" src="../../../public/pic/Arrowinround.svg" alt="">
         </div>
       </button>
       <img @click="closeModal"
            class="cross"
-           src="../../public/pic/close.svg" alt="">
+           src="../../../public/pic/close.svg" alt="">
     </div>
   </div>
 </template>

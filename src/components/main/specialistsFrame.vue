@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import specialistAnonce from "@/components/specialistAnonce";
+import specialistAnonce from "@/components/cards/specialistAnonce";
 
 export default {
   name: "specialistsFrame",

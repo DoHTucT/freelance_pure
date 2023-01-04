@@ -33,9 +33,9 @@
 </template>
 
 <script>
-import navBar from "@/components/navBar";
-import companyAnonceSmall from "@/components/UI/companyAnonceSmall";
-import vacancyAnonce from "@/components/vacancyAnonce";
+import navBar from "@/components/main/navBar";
+import companyAnonceSmall from "@/components/cards/companyAnonceSmall";
+import vacancyAnonce from "@/components/cards/vacancyAnonce";
 
 export default {
   name: "companyProfile",

@@ -19,14 +19,14 @@
       </div>
       <img @click="closeModal"
            class="cross"
-           src="../../public/pic/close.svg" alt="">
+           src="../../../public/pic/close.svg" alt="">
     </div>
   </div>
 </template>
 
 <script>
-import signInContent from "@/components/signInContent";
-import registerContent from "@/components/registerContent";
+import signInContent from "@/components/modal/signInContent";
+import registerContent from "@/components/modal/registerContent";
 
 
 export default {

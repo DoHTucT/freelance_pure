@@ -9,10 +9,10 @@
 </template>
 
 <script>
-import navBar from "@/components/navBar";
-import myHeader from "@/components/header";
-import asideMenu from "@/components/asideMenu";
-import mainFrame from "@/components/mainFrame";
+import navBar from "@/components/main/navBar";
+import myHeader from "@/components/main/header";
+import asideMenu from "@/components/main/asideMenu";
+import mainFrame from "@/components/main/mainFrame";
 
 export default {
   name: "vacancy",

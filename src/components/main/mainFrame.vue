@@ -6,10 +6,10 @@
 </template>
 
 <script>
-import vacancyAnonce from "@/components/vacancyAnonce";
-import specialistAnonce from "@/components/specialistAnonce";
-import vacancyFrame from "@/components/vacancyFrame";
-import specialistsFrame from "@/components/specialistsFrame";
+import vacancyAnonce from "@/components/cards/vacancyAnonce";
+import specialistAnonce from "@/components/cards/specialistAnonce";
+import vacancyFrame from "@/components/main/vacancyFrame";
+import specialistsFrame from "@/components/main/specialistsFrame";
 
 export default {
   name: "mainFrame",

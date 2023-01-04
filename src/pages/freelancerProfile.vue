@@ -43,8 +43,8 @@
 </template>
 
 <script>
-import navBar from "@/components/navBar";
-import freelancerProfileCard from "@/components/freelancerProfileCard";
+import navBar from "@/components/main/navBar";
+import freelancerProfileCard from "@/components/cards/freelancerProfileCard";
 
 export default {
   name: "freelancerProfile",

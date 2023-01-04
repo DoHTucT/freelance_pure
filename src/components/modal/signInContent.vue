@@ -27,11 +27,11 @@
     <myButton class="button">Войти</myButton>
     <div class="sm-enter-text">Войти через социальные сети:</div>
     <div class="sm-frame">
-      <img class="sm" src="../../public/pic/google.svg" alt="">
-      <img class="sm" src="../../public/pic/facebook.svg" alt="">
-      <img class="sm" src="../../public/pic/linkedin.svg" alt="">
-      <img class="sm" src="../../public/pic/vk.svg" alt="">
-      <img class="sm" src="../../public/pic/twitter.svg" alt="">
+      <img class="sm" src="../../../public/pic/google.svg" alt="">
+      <img class="sm" src="../../../public/pic/facebook.svg" alt="">
+      <img class="sm" src="../../../public/pic/linkedin.svg" alt="">
+      <img class="sm" src="../../../public/pic/vk.svg" alt="">
+      <img class="sm" src="../../../public/pic/twitter.svg" alt="">
     </div>
   </div>
 </template>

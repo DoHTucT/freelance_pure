@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import vacancyAnonce from "@/components/vacancyAnonce";
+import vacancyAnonce from "@/components/cards/vacancyAnonce";
 
 export default {
   name: "Вакансии",

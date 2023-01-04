@@ -1,6 +1,6 @@
 import {createRouter, createWebHistory} from 'vue-router'
 import vacancy from "@/pages/vacancy";
-import vacancyAnonce from "@/components/vacancyAnonce";
+import vacancyAnonce from "@/components/cards/vacancyAnonce";
 import vacancyCard from "@/pages/vacancyCard";
 import companyProfile from "@/pages/companyProfile";
 import freelancerProfile from "@/pages/freelancerProfile";

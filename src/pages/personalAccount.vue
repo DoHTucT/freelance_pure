@@ -76,7 +76,7 @@
 </template>
 
 <script>
-import navBar from "@/components/navBar";
+import navBar from "@/components/main/navBar";
 import headerButton from "@/components/UI/headerButton";
 import accountInput from "@/components/UI/accountInput";
 import accountRadio from "@/components/UI/accountRadio";

@@ -21,7 +21,7 @@
 import headerMenuButton from "@/components/UI/navBarButton";
 import userSign from "@/components/UI/userSign";
 import myButton from "@/components/UI/button";
-import signInModal from "@/components/signInModal";
+import signInModal from "@/components/modal/signInModal";
 
 export default {
   name: "navBarMenu",

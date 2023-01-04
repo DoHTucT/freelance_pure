@@ -8,7 +8,7 @@
         <div id="square4"/>
       </div>
       <div id="logo" @click="$router.push('/')">
-        <img src="../../public/pic/sourcestore.svg"/>
+        <img src="../../../public/pic/sourcestore.svg"/>
       </div>
       <navBarMenu/>
     </div>
@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import navBarMenu from "@/components/UI/navBarMenu";
+import navBarMenu from "@/components/main/navBarMenu";
 
 export default {
   name: "navBar",
