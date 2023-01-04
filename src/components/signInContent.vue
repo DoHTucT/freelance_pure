@@ -1,12 +1,24 @@
 <template>
   <div class="container">
-    <input class="input" type="text" id="tel" required>
+    <input
+        v-maska
+        data-maska="+7(###) ###-####"
+        class="input phone"
+        id="tel"
+        v-model="signInPhone"
+        required>
     <label class="label" for="tel">Ваш телефон</label>
-    <input class="input" type="password" id="pass" required>
+    <input class="input"
+           type="password"
+           id="pass"
+           v-model="signInPassword"
+           required>
     <label class="label" for="pass">Ваш пароль</label>
     <div class="checkbox-frame">
       <label class="checkbox-label">
-        <input type="checkbox" class="checkbox">
+        <input type="checkbox"
+               class="checkbox"
+        v-model="signInRemember">
         <span class="custom"/>
         <span class="checkbox-text">Запомнить меня</span>
       </label>
@@ -26,11 +38,26 @@
 
 <script>
 import myButton from "@/components/UI/button";
+import {vMaska} from "maska";
+
 
 export default {
   name: "signInContent",
   components: {
     myButton
+  },
+
+  directives: {maska: vMaska},
+
+  data() {
+    return {
+      signInPhone: '',
+      signInPassword: '',
+      signInRemember: {
+        type: Boolean,
+        default: false,
+      }
+    }
   }
 }
 </script>

@@ -8,8 +8,7 @@
                  class="radio"
                  name="sex"
                  id="male"
-                 @change="$emit('update:modelValue', $event.target.value)"
-                 :value="modelValue"
+                 v-model="accountGender"
                  value="male">
           <span class="custom"/>
           <span class="text">Мужской</span>
@@ -21,8 +20,7 @@
                  class="radio"
                  name="sex"
                  id="female"
-                 @change="$emit('update:modelValue', $event.target.value)"
-                 :value="modelValue"
+                 v-model="accountGender"
                  value="female">
           <span class="custom"/>
           <span class="text">Женский</span>
@@ -35,8 +33,14 @@
 <script>
 export default {
   name: "accountRadio",
-  props: ['modelValue'],
-  emits: ['update:modelValue'],
+
+  props: ['accountGender'],
+
+  data() {
+    return {
+      accountGender: ''
+    }
+  }
 }
 </script>
 

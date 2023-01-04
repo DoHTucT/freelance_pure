@@ -4,22 +4,29 @@
         v-show="isShowModal"
         :show="isShowModal"
         @close="toggleModal"/>
-    <input class="input" type="text" id="login" required>
+    <input class="input"
+           type="text"
+           id="login"
+           v-model="registerLogin"
+           required>
     <label class="label" for="login">Ваш логин</label>
     <input
         v-maska
         data-maska="+7(###) ###-####"
         class="input phone"
         id="tel"
+        v-model="registerPhone"
         required>
     <label class="label" for="tel">Ваш телефон</label>
     <div class="checkbox-frame">
       <label class="checkbox-label">
-        <input type="checkbox" class="checkbox">
+        <input type="checkbox"
+               class="checkbox"
+               v-model="registerRemember"
+        >
         <span class="custom"/>
         <span class="checkbox-text">Запомнить меня</span>
       </label>
-      <div class="forgot">Забыли пароль?</div>
     </div>
     <myButton
         @click="toggleModal($event), hideParentModal"
@@ -55,6 +62,12 @@ export default {
     return {
       form: {
         phone: ''
+      },
+      registerLogin: '',
+      registerPhone: '',
+      registerRemember: {
+        type: Boolean,
+        default: false,
       },
       isShowModal: false,
     }
@@ -185,18 +198,6 @@ export default {
   line-height: 150%;
   letter-spacing: 0.01em;
   color: #252931;
-}
-
-.forgot {
-  position: relative;
-  top: 2px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 150%;
-  letter-spacing: 0.01em;
-  text-decoration-line: underline;
-  color: #11316A;
-  cursor: pointer;
 }
 
 .button {

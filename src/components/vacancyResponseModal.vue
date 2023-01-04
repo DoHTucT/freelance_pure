@@ -28,7 +28,10 @@
             <img class="eye" src="../../public/pic/EyeBig.svg" alt="">
           </div>
         </div>
-        <textarea class="textarea" placeholder="Вставить текст из предыдущего отклика?"></textarea>
+        <textarea class="textarea"
+                  placeholder="Вставить текст из предыдущего отклика?"
+                  v-model="vacancyResponseText"
+        />
         <div class="insert">Вставить</div>
         <div class="button-frame">
           <myButton @click="closeModal" class="button" id="cancel">Отмена</myButton>
@@ -49,6 +52,12 @@ export default {
 
   components: {
     myButton
+  },
+
+  data() {
+    return {
+      vacancyResponseText: ''
+    }
   },
 
   props: {
