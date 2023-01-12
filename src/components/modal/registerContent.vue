@@ -29,7 +29,7 @@
       </label>
     </div>
     <myButton
-        @click="toggleModal($event), hideParentModal"
+        @click="toggleModal"
         class="button">
       Зарегистрироваться
     </myButton>
@@ -84,13 +84,8 @@ export default {
     },
 
     toggleModal() {
-      this.isShowModal = !this.isShowModal;
-
+      this.$store.dispatch('updateModalComponent', roleChoosingModal);
     },
-
-    hideParentModal() {
-      this.$emit('hideModal', true)
-    }
   }
 }
 </script>

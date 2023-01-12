@@ -18,7 +18,7 @@
       <label class="checkbox-label">
         <input type="checkbox"
                class="checkbox"
-        v-model="signInRemember">
+               v-model="signInRemember">
         <span class="custom"/>
         <span class="checkbox-text">Запомнить меня</span>
       </label>

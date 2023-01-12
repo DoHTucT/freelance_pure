@@ -1,26 +1,23 @@
 <template>
-  <div @click="closeModal"
-       class="background"
-       @hideModal="hideModal">
-    <div @click.stop :class="['signIn-frame', { hide: hideModal === true }]">
-      <div class="signIn-container">
-        <div class="signIn-menu">
-          <div v-for="tab in tabs"
-               :key="tab"
-               :class="['tab-button', { active: currentTab === tab.key }]"
-               @click="currentTab = tab.key">
-            {{ tab.title }}
-          </div>
 
+  <div class="signIn-frame">
+    <div class="signIn-container">
+      <div class="signIn-menu">
+        <div v-for="tab in tabs"
+             :key="tab"
+             :class="['tab-button', { active: currentTab === tab.key }]"
+             @click="currentTab = tab.key">
+          {{ tab.title }}
         </div>
-        <div class="content-frame">
-          <component :is="currentTab" class="tab"/>
-        </div>
+
       </div>
-      <img @click="closeModal"
-           class="cross"
-           src="../../../public/pic/close.svg" alt="">
+      <div class="content-frame">
+        <component :is="currentTab" class="tab"/>
+      </div>
     </div>
+    <img @click="closeModal"
+         class="cross"
+         src="../../../public/pic/close.svg" alt="">
   </div>
 </template>
 
@@ -39,7 +36,7 @@ export default {
   data() {
     return {
       currentTab: 'signInContent',
-      tabs: [{ key: 'signInContent', title: 'Вход' }, { key: 'registerContent', title: 'Регистрация' }],
+      tabs: [{key: 'signInContent', title: 'Вход'}, {key: 'registerContent', title: 'Регистрация'}],
 
     }
   },
@@ -48,37 +45,17 @@ export default {
       type: Boolean,
       default: false,
     },
-
   },
 
   methods: {
     closeModal() {
-      this.$emit('close');
+      this.$store.dispatch('updateModalComponent', '');
     },
-
-    hideModal() {
-     return this.hideModal;
-    }
   }
 }
 </script>
 
 <style scoped>
-.background {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0px;
-  bottom: 0px;
-  background: rgba(37, 41, 49, 0.6);;
-  backdrop-filter: blur(3px);
-  z-index: 5;
-}
-
-.signIn-frame.hide {
-  z-index: -100;
-}
-
 .signIn-frame {
   position: fixed;
   left: 50%;

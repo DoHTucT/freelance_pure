@@ -1,9 +1,5 @@
 <template>
   <div class="headerMenu">
-    <signInModal
-        v-show="isShowModal"
-        :show="isShowModal"
-        @close="toggleModal"/>
     <headerMenuButton
         v-for="tab in tabs"
         :key="tab.key"
@@ -36,8 +32,8 @@ export default {
   data() {
     return {
       tabs: [{key: 'vacancyFrame', tab: 'Вакансии', title: 'Каталог вакансий'},
-             {key: 'specialistsFrame', tab: 'Специалисты', title: 'Каталог специалистов'},
-             {key: 'company', tab: 'Компании', title: 'Каталог компаний'}],
+        {key: 'specialistsFrame', tab: 'Специалисты', title: 'Каталог специалистов'},
+        {key: 'company', tab: 'Компании', title: 'Каталог компаний'}],
 
       isShowModal: false,
     }
@@ -53,10 +49,9 @@ export default {
     handleChangeTab(tab) {
       this.$store.dispatch('updateCurrentTab', tab)
     },
-
     toggleModal() {
-      this.isShowModal = !this.isShowModal
-    },
+      this.$store.dispatch('updateModalComponent', signInModal)
+    }
   }
 }
 

@@ -1,6 +1,5 @@
 <template>
-  <div @click="closeModal" class="background">
-    <div @click.stop class="role-frame">
+    <div class="role-frame">
       <div class="h1">Что вы ищете?</div>
       <button class="button">
         <img class="icon" src="../../../public/pic/Customer.svg" alt="">
@@ -22,40 +21,21 @@
            class="cross"
            src="../../../public/pic/close.svg" alt="">
     </div>
-  </div>
 </template>
 
 <script>
 export default {
   name: "roleChoosingModalModal",
 
-  props: {
-    show: {
-      type: Boolean,
-      default: false,
-    }
-
-  },
-
   methods: {
     closeModal() {
-      this.$emit('close');
+      this.$store.dispatch("updateModalComponent", '');
     }
   }
 }
 </script>
 
 <style scoped>
-.background {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  bottom: 0px;
-  background: rgba(37, 41, 49, 0.6);;
-  backdrop-filter: blur(3px);
-  z-index: 5;
-}
-
 .role-frame {
   position: fixed;
   left: 50%;
