@@ -1,6 +1,5 @@
 <template>
   <div class="">
-    <div @click="closeModal" class="background"/>
     <div @click.stop class="response-frame">
       <div class="response-container">
         <div class="header">Ваш отклик на вакансию</div>
@@ -70,23 +69,13 @@ export default {
 
   methods: {
     closeModal() {
-      this.$emit('close');
+      this.$store.dispatch("updateModalComponent", '')
     }
   }
 }
 </script>
 
 <style scoped>
-.background {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  bottom: 0px;
-  background: rgba(37, 41, 49, 0.6);;
-  backdrop-filter: blur(3px);
-  z-index: 5;
-}
-
 .response-frame {
   position: fixed;
   left: 50%;

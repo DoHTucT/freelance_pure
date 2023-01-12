@@ -1,9 +1,5 @@
 <template>
   <div>
-    <vacancyResponseModal
-        v-show="isShowModal"
-        :show="isShowModal"
-        @close="toggleModal"/>
     <myHeader/>
     <div class="container">
       <div class="h1">
@@ -87,7 +83,7 @@ export default {
 
   methods: {
     toggleModal() {
-      this.isShowModal = !this.isShowModal
+      this.$store.dispatch("updateModalComponent", vacancyResponseModal)
     }
   }
 }
